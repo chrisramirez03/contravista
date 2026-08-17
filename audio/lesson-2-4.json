@@ -1,7 +1,7 @@
 {
   "lessonId": "lesson-2-4",
   "voice": "en-US-ChristopherNeural",
-  "totalDuration": 47.51,
+  "totalDuration": 43.67,
   "sentences": [
     {
       "text": "When a circuit contains both a capacitor and an inductor, energy oscillates back and forth between the capacitor's electric field and the inductor's magnetic field.",
@@ -9,29 +9,67 @@
       "end": 9.49
     },
     {
-      "text": "The undamped resonant frequency is: omega_0 = 1 / sqrt(L × C).",
+      "text": "The undamped resonant frequency is: ω₀ = 1 / sqrt(L × C).",
       "start": 9.44,
-      "end": 17.29
+      "end": 16.31
     },
     {
       "text": "The resistor dissipates energy and provides damping, defined by alpha = R / (2L) for a series circuit.",
-      "start": 17.29,
-      "end": 25.64
+      "start": 16.31,
+      "end": 24.66
     },
     {
-      "text": "If alpha is greater than omega_0, the circuit is Overdamped (sluggish, no oscillation).",
-      "start": 25.64,
-      "end": 32.9
+      "text": "If alpha is greater than ω₀, the circuit is Overdamped (sluggish, no oscillation).",
+      "start": 24.66,
+      "end": 30.98
     },
     {
-      "text": "If alpha equals omega_0, the circuit is Critically Damped (fastest settling with zero overshoot).",
-      "start": 32.9,
-      "end": 40.46
+      "text": "If alpha equals ω₀, the circuit is Critically Damped (fastest settling with zero overshoot).",
+      "start": 30.98,
+      "end": 37.52
     },
     {
-      "text": "If alpha is less than omega_0, the circuit is Underdamped (oscillates and rings before settling).",
-      "start": 40.46,
-      "end": 47.51
+      "text": "If alpha is less than ω₀, the circuit is Underdamped (oscillates and rings before settling).",
+      "start": 37.52,
+      "end": 43.67
+    }
+  ],
+  "speechItems": [
+    {
+      "type": "sentence",
+      "id": "s12_1",
+      "text": "When a circuit contains both a capacitor and an inductor, energy oscillates back and forth between the capacitor's electric field and the inductor's magnetic field.",
+      "spoken": "When a circuit contains both a capacitor and an inductor, energy oscillates back and forth between the capacitor's electric field and the inductor's magnetic field."
+    },
+    {
+      "type": "sentence",
+      "id": "s12_2",
+      "text": "The undamped resonant frequency is: ω₀ = 1 / sqrt(L × C).",
+      "spoken": "The undamped resonant frequency is: ω₀ = 1 / sqrt(L × C)."
+    },
+    {
+      "type": "sentence",
+      "id": "s12_3",
+      "text": "The resistor dissipates energy and provides damping, defined by alpha = R / (2L) for a series circuit.",
+      "spoken": "The resistor dissipates energy and provides damping, defined by alpha = R / (2L) for a series circuit."
+    },
+    {
+      "type": "sentence",
+      "id": "s12_4",
+      "text": "If alpha is greater than ω₀, the circuit is Overdamped (sluggish, no oscillation).",
+      "spoken": "If alpha is greater than ω₀, the circuit is Overdamped (sluggish, no oscillation)."
+    },
+    {
+      "type": "sentence",
+      "id": "s12_5",
+      "text": "If alpha equals ω₀, the circuit is Critically Damped (fastest settling with zero overshoot).",
+      "spoken": "If alpha equals ω₀, the circuit is Critically Damped (fastest settling with zero overshoot)."
+    },
+    {
+      "type": "sentence",
+      "id": "s12_6",
+      "text": "If alpha is less than ω₀, the circuit is Underdamped (oscillates and rings before settling).",
+      "spoken": "If alpha is less than ω₀, the circuit is Underdamped (oscillates and rings before settling)."
     }
   ]
 }

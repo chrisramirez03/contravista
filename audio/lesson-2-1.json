@@ -1,7 +1,7 @@
 {
   "lessonId": "lesson-2-1",
   "voice": "en-US-ChristopherNeural",
-  "totalDuration": 62.94,
+  "totalDuration": 35.3,
   "sentences": [
     {
       "text": "A capacitor consists of two conducting plates separated by an insulating dielectric material.",
@@ -27,16 +27,38 @@
       "text": "In a steady-state DC circuit where voltage is constant (dv/dt = 0), a capacitor acts as an open circuit (i = 0).",
       "start": 25.48,
       "end": 35.3
+    }
+  ],
+  "speechItems": [
+    {
+      "type": "sentence",
+      "id": "s9_1",
+      "text": "A capacitor consists of two conducting plates separated by an insulating dielectric material.",
+      "spoken": "A capacitor consists of two conducting plates separated by an insulating dielectric material."
     },
     {
-      "text": "strong>Energy Stored in a Capacitor:</strong> $w = \\\\frac{1}{2} C V^2$ Joules.",
-      "start": 35.3,
-      "end": 46.84
+      "type": "sentence",
+      "id": "s9_2",
+      "text": "When voltage is applied, positive charge accumulates on one plate and negative charge on the other, creating an electric field.",
+      "spoken": "When voltage is applied, positive charge accumulates on one plate and negative charge on the other, creating an electric field."
     },
     {
-      "text": "Notice that the voltage across a capacitor cannot change instantaneously, because that would require infinite current ($i = C \\\\frac{dv}{0} = \\\\infty$).",
-      "start": 46.84,
-      "end": 62.94
+      "type": "sentence",
+      "id": "s9_3",
+      "text": "The fundamental relationship between current and voltage is: i = C × (dv / dt).",
+      "spoken": "The fundamental relationship between current and voltage is: i = C × (dv / dt)."
+    },
+    {
+      "type": "sentence",
+      "id": "s9_4",
+      "text": "Current only flows through a capacitor when the voltage is changing.",
+      "spoken": "Current only flows through a capacitor when the voltage is changing."
+    },
+    {
+      "type": "sentence",
+      "id": "s9_5",
+      "text": "In a steady-state DC circuit where voltage is constant (dv/dt = 0), a capacitor acts as an open circuit (i = 0).",
+      "spoken": "In a steady-state DC circuit where voltage is constant (dv/dt = 0), a capacitor acts as an open circuit (i = 0)."
     }
   ]
 }

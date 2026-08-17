@@ -53,12 +53,12 @@ var COURSES_CATALOG = [
                   {
                     title: "1. The Atomic Blueprint",
                     sentences: [
-                      { id: "s1", text: "Everything in the physical universe is composed of atoms.", start: 15.96, end: 19.8 },
-                      { id: "s2", text: "Your phone screen, your body, and copper wiring are all built from billions of these microscopic building blocks.", start: 19.8, end: 27.12 },
-                      { id: "s3", text: "Every atom contains a dense central nucleus packed with positively charged protons and neutral neutrons.", start: 27.12, end: 33.86 },
-                      { id: "s4", text: "Orbiting around this nucleus at high speeds are tiny, negatively charged particles called electrons.", start: 33.86, end: 40.4 },
-                      { id: "s5", text: "In normal stable matter, positive protons and negative electrons balance out.", start: 40.4, end: 45.94 },
-                      { id: "s6", text: "Electricity occurs when electrons break free from their orbits and move.", start: 45.94, end: 50.81 }
+                      { id: "s1", text: "Everything in the physical universe is composed of atoms.", start: 0.1, end: 3.94 },
+                      { id: "s2", text: "Your phone screen, your body, and copper wiring are all built from billions of these microscopic building blocks.", start: 3.89, end: 11.21 },
+                      { id: "s3", text: "Every atom contains a dense central nucleus packed with positively charged protons and neutral neutrons.", start: 11.21, end: 17.95 },
+                      { id: "s4", text: "Orbiting around this nucleus at high speeds are tiny, negatively charged particles called electrons.", start: 17.95, end: 24.49 },
+                      { id: "s5", text: "In normal stable matter, positive protons and negative electrons balance out.", start: 24.49, end: 30.02 },
+                      { id: "s6", text: "Electricity occurs when electrons break free from their orbits and move.", start: 30.02, end: 34.9 }
                     ],
                     illustration: "atom",
                     callout: {
@@ -69,12 +69,12 @@ var COURSES_CATALOG = [
                   {
                     title: "2. Conductors vs. Insulators",
                     sentences: [
-                      { id: "s7", text: "Why does electricity flow easily through metal wiring, but get stopped cold by plastic or rubber?", start: 54.75, end: 61.06 },
-                      { id: "s8", text: "In conductive materials like copper, silver, and gold, the outermost electrons are held very loosely.", start: 61.06, end: 68.17 },
-                      { id: "s9", text: "They can easily hop between neighboring atoms to form an electric current.", start: 68.17, end: 72.76 },
-                      { id: "s10", text: "In insulators like rubber, glass, and plastic, electrons are locked tightly to their nuclei.", start: 72.76, end: 79.42 },
-                      { id: "s11", text: "Even with high electrical force, they refuse to flow.", start: 79.42, end: 83.49 },
-                      { id: "s12", text: "That is why electrical cables use copper wire on the inside to conduct power, surrounded by flexible rubber on the outside to keep you safe.", start: 83.49, end: 92.01 }
+                      { id: "s7", text: "Why does electricity flow easily through metal wiring, but get stopped cold by plastic or rubber?", start: 34.9, end: 41.21 },
+                      { id: "s8", text: "In conductive materials like copper, silver, and gold, the outermost electrons are held very loosely.", start: 41.21, end: 48.32 },
+                      { id: "s9", text: "They can easily hop between neighboring atoms to form an electric current.", start: 48.33, end: 52.91 },
+                      { id: "s10", text: "In insulators like rubber, glass, and plastic, electrons are locked tightly to their nuclei.", start: 52.91, end: 59.58 },
+                      { id: "s11", text: "Even with high electrical force, they refuse to flow.", start: 59.58, end: 63.64 },
+                      { id: "s12", text: "That is why electrical cables use copper wire on the inside to conduct power, surrounded by flexible rubber on the outside to keep you safe.", start: 63.64, end: 72.16 }
                     ],
                     comparison: {
                       left: {
@@ -108,12 +108,12 @@ var COURSES_CATALOG = [
                   {
                     title: "3. Voltage: The Electrical Pressure",
                     sentences: [
-                      { id: "s13", text: "Electrons will not flow through a wire on their own.", start: 96.06, end: 99.78 },
-                      { id: "s14", text: "They need a force pushing them.", start: 99.78, end: 102.19 },
-                      { id: "s15", text: "Think of water in a pipe: without water pressure from a pump or elevated water tower, the water just sits still.", start: 102.19, end: 109.44 },
-                      { id: "s16", text: "Voltage, measured in Volts, is that electrical pressure provided by a battery or power supply.", start: 109.44, end: 115.86 },
-                      { id: "s17", text: "The higher the voltage, the stronger the push, and the more current flows through the circuit.", start: 115.86, end: 121.34 },
-                      { id: "s18", text: "Remember the golden rule: Voltage is the cause, and Current is the effect.", start: 121.34, end: 126.75 }
+                      { id: "s13", text: "Electrons will not flow through a wire on their own.", start: 72.16, end: 75.88 },
+                      { id: "s14", text: "They need a force pushing them.", start: 75.88, end: 78.29 },
+                      { id: "s15", text: "Think of water in a pipe: without water pressure from a pump or elevated water tower, the water just sits still.", start: 78.29, end: 85.54 },
+                      { id: "s16", text: "Voltage, measured in Volts, is that electrical pressure provided by a battery or power supply.", start: 85.54, end: 91.96 },
+                      { id: "s17", text: "The higher the voltage, the stronger the push, and the more current flows through the circuit.", start: 91.96, end: 97.44 },
+                      { id: "s18", text: "Remember the golden rule: Voltage is the cause, and Current is the effect.", start: 97.44, end: 102.85 }
                     ],
                     illustration: "voltageAnalogy",
                     callout: {
@@ -350,10 +350,10 @@ var COURSES_CATALOG = [
                   {
                     title: "1. Kirchhoff's Current Law (KCL) & Voltage Law (KVL)",
                     sentences: [
-                      { id: "s3_1", text: "In 1845, Gustav Kirchhoff formulated two laws that allow us to solve any electrical circuit, no matter how complex.", start: 0.1, end: 8.4 },
-                      { id: "s3_2", text: "Kirchhoff's Current Law states that the sum of all currents entering a junction node must equal the sum of currents leaving it.", start: 8.4, end: 18.2 },
-                      { id: "s3_3", text: "Charge cannot build up or vanish at a point: sum of currents entering equals sum of currents leaving.", start: 18.2, end: 24.8 },
-                      { id: "s3_4", text: "Kirchhoff's Voltage Law states that the algebraic sum of all voltages around any closed loop must equal zero.", start: 24.8, end: 35.6 }
+                      { id: "s3_1", text: "In 1845, Gustav Kirchhoff formulated two laws that allow us to solve any electrical circuit, no matter how complex.", start: 0.1, end: 8.71 },
+                      { id: "s3_2", text: "Kirchhoff's Current Law states that the sum of all currents entering a junction node must equal the sum of currents leaving it.", start: 8.66, end: 15.64 },
+                      { id: "s3_3", text: "Charge cannot build up or vanish at a point: sum of currents entering equals sum of currents leaving.", start: 15.64, end: 21.88 },
+                      { id: "s3_4", text: "Kirchhoff's Voltage Law states that the algebraic sum of all voltages around any closed loop must equal zero.", start: 21.88, end: 28.81 }
                     ],
                     comparison: {
                       left: {
@@ -792,10 +792,10 @@ var COURSES_CATALOG = [
                   {
                     title: "1. The Superposition Principle",
                     sentences: [
-                      { id: "s7_1", text: "In any linear circuit containing multiple independent sources, the voltage or current through any element is the algebraic sum of the responses caused by each source acting alone.", start: 0.1, end: 13.5 },
-                      { id: "s7_2", text: "To turn off a voltage source, replace it with a short circuit (0 Volts, a solid wire).", start: 13.5, end: 21.0 },
-                      { id: "s7_3", text: "To turn off a current source, replace it with an open circuit (0 Amperes, a broken wire).", start: 21.0, end: 28.5 },
-                      { id: "s7_4", text: "Calculate the output for each source individually, then add the partial results together.", start: 28.5, end: 36.0 }
+                      { id: "s7_1", text: "In any linear circuit containing multiple independent sources, the voltage or current through any element is the algebraic sum of the responses caused by each source acting alone.", start: 0.1, end: 10.64 },
+                      { id: "s7_2", text: "To turn off a voltage source, replace it with a short circuit (0 Volts, a solid wire).", start: 10.59, end: 17.14 },
+                      { id: "s7_3", text: "To turn off a current source, replace it with an open circuit (0 Amperes, a broken wire).", start: 17.14, end: 23.59 },
+                      { id: "s7_4", text: "Calculate the output for each source individually, then add the partial results together.", start: 23.59, end: 29.2 }
                     ],
                     comparison: {
                       left: {
@@ -881,10 +881,10 @@ var COURSES_CATALOG = [
                   {
                     title: "1. Thevenin's & Norton's Theorems",
                     sentences: [
-                      { id: "s8_1", text: "In 1883, French engineer Léon Charles Thévenin proved that any linear two-terminal circuit of resistors and sources can be replaced by an equivalent circuit consisting of a single voltage source VTh in series with a resistor RTh.", start: 0.1, end: 17.5 },
-                      { id: "s8_2", text: "Similarly, Norton's theorem proves the same network can be replaced by an equivalent current source IN in parallel with a resistor RN.", start: 17.5, end: 28.5 },
-                      { id: "s8_3", text: "VTh is the open-circuit voltage across terminals a-b.", start: 28.5, end: 34.0 },
-                      { id: "s8_4", text: "IN is the short-circuit current flowing when a-b are connected.", start: 34.0, end: 40.2 },
+                      { id: "s8_1", text: "In 1883, French engineer Léon Charles Thévenin proved that any linear two-terminal circuit of resistors and sources can be replaced by an equivalent circuit consisting of a single voltage source VTh in series with a resistor RTh.", start: 0.1, end: 14.57 },
+                      { id: "s8_2", text: "Similarly, Norton's theorem proves the same network can be replaced by an equivalent current source IN in parallel with a resistor RN.", start: 14.53, end: 22.93 },
+                      { id: "s8_3", text: "VTh is the open-circuit voltage across terminals a-b.", start: 22.93, end: 30.8 },
+                      { id: "s8_4", text: "IN is the short-circuit current flowing when a-b are connected.", start: 30.8, end: 35.69 },
                       { id: "s8_5", text: "The equivalent resistance is RTh = Voc / Isc.", start: 40.2, end: 46.5 }
                     ],
                     comparison: {
@@ -1016,11 +1016,11 @@ var COURSES_CATALOG = [
                   {
                     title: "1. Capacitance Physics and the Differential Law",
                     sentences: [
-                      { id: "s9_1", text: "A capacitor consists of two conducting plates separated by an insulating dielectric material.", start: 0.1, end: 8.0 },
-                      { id: "s9_2", text: "When voltage is applied, positive charge accumulates on one plate and negative charge on the other, creating an electric field.", start: 8.0, end: 17.5 },
-                      { id: "s9_3", text: "The fundamental relationship between current and voltage is: i = C × (dv / dt).", start: 17.5, end: 25.0 },
-                      { id: "s9_4", text: "Current only flows through a capacitor when the voltage is changing.", start: 25.0, end: 31.0 },
-                      { id: "s9_5", text: "In a steady-state DC circuit where voltage is constant (dv/dt = 0), a capacitor acts as an open circuit (i = 0).", start: 31.0, end: 41.5 }
+                      { id: "s9_1", text: "A capacitor consists of two conducting plates separated by an insulating dielectric material.", start: 0.1, end: 6.27 },
+                      { id: "s9_2", text: "When voltage is applied, positive charge accumulates on one plate and negative charge on the other, creating an electric field.", start: 6.22, end: 14.11 },
+                      { id: "s9_3", text: "The fundamental relationship between current and voltage is: i = C × (dv / dt).", start: 14.11, end: 21.33 },
+                      { id: "s9_4", text: "Current only flows through a capacitor when the voltage is changing.", start: 21.32, end: 25.48 },
+                      { id: "s9_5", text: "In a steady-state DC circuit where voltage is constant (dv/dt = 0), a capacitor acts as an open circuit (i = 0).", start: 25.48, end: 35.3 }
                     ],
                     comparison: {
                       left: {
@@ -1293,12 +1293,12 @@ var COURSES_CATALOG = [
                   {
                     title: "1. The Three Regimes of RLC Systems",
                     sentences: [
-                      { id: "s12_1", text: "When a circuit contains both a capacitor and an inductor, energy oscillates back and forth between the capacitor's electric field and the inductor's magnetic field.", start: 0.1, end: 11.5 },
-                      { id: "s12_2", text: "The undamped resonant frequency is: ω₀ = 1 / sqrt(L × C).", start: 11.5, end: 18.0 },
-                      { id: "s12_3", text: "The resistor dissipates energy and provides damping, defined by alpha = R / (2L) for a series circuit.", start: 18.0, end: 27.5 },
-                      { id: "s12_4", text: "If alpha is greater than ω₀, the circuit is Overdamped (sluggish, no oscillation).", start: 27.5, end: 35.0 },
-                      { id: "s12_5", text: "If alpha equals ω₀, the circuit is Critically Damped (fastest settling with zero overshoot).", start: 35.0, end: 43.5 },
-                      { id: "s12_6", text: "If alpha is less than ω₀, the circuit is Underdamped (oscillates and rings before settling).", start: 43.5, end: 52.0 }
+                      { id: "s12_1", text: "When a circuit contains both a capacitor and an inductor, energy oscillates back and forth between the capacitor's electric field and the inductor's magnetic field.", start: 0.1, end: 9.49 },
+                      { id: "s12_2", text: "The undamped resonant frequency is: ω₀ = 1 / sqrt(L × C).", start: 9.44, end: 16.31 },
+                      { id: "s12_3", text: "The resistor dissipates energy and provides damping, defined by alpha = R / (2L) for a series circuit.", start: 16.31, end: 24.66 },
+                      { id: "s12_4", text: "If alpha is greater than ω₀, the circuit is Overdamped (sluggish, no oscillation).", start: 24.66, end: 30.98 },
+                      { id: "s12_5", text: "If alpha equals ω₀, the circuit is Critically Damped (fastest settling with zero overshoot).", start: 30.98, end: 37.52 },
+                      { id: "s12_6", text: "If alpha is less than ω₀, the circuit is Underdamped (oscillates and rings before settling).", start: 37.52, end: 43.67 }
                     ],
                     comparison: {
                       left: {
@@ -1420,11 +1420,11 @@ var COURSES_CATALOG = [
                   {
                     title: "1. The Phasor Transformation",
                     sentences: [
-                      { id: "s13_1", text: "Analyzing AC circuits with sine and cosine differential equations is extremely tedious.", start: 0.1, end: 7.5 },
-                      { id: "s13_2", text: "By using Euler's formula: e^(j theta) = cos(theta) + j sin(theta), we transform time-domain sinusoids into complex vectors called Phasors.", start: 7.5, end: 19.0 },
-                      { id: "s13_3", text: "A sinusoid v(t) = Vm cos(ω t + phi) becomes the phasor V = Vm ∠ phi.", start: 19.0, end: 27.5 },
-                      { id: "s13_4", text: "In the phasor domain, resistors have impedance ZR = R.", start: 27.5, end: 32.5 },
-                      { id: "s13_5", text: "Inductors have impedance ZL = j ω L, where voltage leads current by 90 degrees.", start: 32.5, end: 40.5 },
+                      { id: "s13_1", text: "Analyzing AC circuits with sine and cosine differential equations is extremely tedious.", start: 0.1, end: 6.41 },
+                      { id: "s13_2", text: "By using Euler's formula: e^(j theta) = cos(theta) + j sin(theta), we transform time-domain sinusoids into complex vectors called Phasors.", start: 6.36, end: 18.86 },
+                      { id: "s13_3", text: "A sinusoid v(t) = Vm cos(ω t + phi) becomes the phasor V = Vm ∠ phi.", start: 18.86, end: 27.76 },
+                      { id: "s13_4", text: "In the phasor domain, resistors have impedance ZR = R.", start: 27.76, end: 38.38 },
+                      { id: "s13_5", text: "Inductors have impedance ZL = j ω L, where voltage leads current by 90 degrees.", start: 38.38, end: 49.45 },
                       { id: "s13_6", text: "Capacitors have impedance ZC = 1 / (j ω C) = -j / (ω C), where current leads voltage by 90 degrees.", start: 40.5, end: 51.0 }
                     ],
                     comparison: {
@@ -1621,11 +1621,11 @@ var COURSES_CATALOG = [
                   {
                     title: "1. Filter Topologies and Cutoff Frequency",
                     sentences: [
-                      { id: "s15_1", text: "A frequency filter is a circuit designed to pass signals with desired frequencies while attenuating unwanted frequencies.", start: 0.1, end: 8.5 },
-                      { id: "s15_2", text: "A Low-Pass Filter passes low frequencies from DC up to a cutoff frequency fc, and blocks high frequencies.", start: 8.5, end: 17.5 },
-                      { id: "s15_3", text: "A High-Pass Filter blocks DC and low frequencies while passing high frequencies.", start: 17.5, end: 24.0 },
-                      { id: "s15_4", text: "The cutoff frequency fc (the -3dB point) for a simple RC filter is: fc = 1 / (2 pi R C).", start: 24.0, end: 33.5 },
-                      { id: "s15_5", text: "At the cutoff frequency, the output power drops to exactly 50% of the input power (a 3 decibel drop).", start: 33.5, end: 43.0 }
+                      { id: "s15_1", text: "A frequency filter is a circuit designed to pass signals with desired frequencies while attenuating unwanted frequencies.", start: 0.1, end: 7.56 },
+                      { id: "s15_2", text: "A Low-Pass Filter passes low frequencies from DC up to a cutoff frequency fc, and blocks high frequencies.", start: 7.51, end: 15.32 },
+                      { id: "s15_3", text: "A High-Pass Filter blocks DC and low frequencies while passing high frequencies.", start: 15.32, end: 21.1 },
+                      { id: "s15_4", text: "The cutoff frequency fc (the -3dB point) for a simple RC filter is: fc = 1 / (2 pi R C).", start: 21.1, end: 31.16 },
+                      { id: "s15_5", text: "At the cutoff frequency, the output power drops to exactly 50% of the input power (a 3 decibel drop).", start: 31.16, end: 38.86 }
                     ],
                     comparison: {
                       left: {
@@ -1743,11 +1743,11 @@ var COURSES_CATALOG = [
                   {
                     title: "1. The Two Golden Rules of Op-Amps",
                     sentences: [
-                      { id: "s16_1", text: "An Operational Amplifier is a high-gain differential voltage amplifier with two inputs and one output.", start: 0.1, end: 8.5 },
-                      { id: "s16_2", text: "When connected with negative feedback, an ideal op-amp obeys two simple Golden Rules.", start: 8.5, end: 15.5 },
-                      { id: "s16_3", text: "Rule One: No current flows into either input terminal: i+ = 0 and i− = 0, because input impedance is infinite.", start: 15.5, end: 26.5 },
-                      { id: "s16_4", text: "Rule Two: The negative feedback forces the differential input voltage to zero, creating a virtual short: v+ = v−.", start: 26.5, end: 38.0 },
-                      { id: "s16_5", text: "With these two rules, analyzing complex op-amp amplifier circuits requires only basic nodal algebra.", start: 38.0, end: 47.0 }
+                      { id: "s16_1", text: "An Operational Amplifier is a high-gain differential voltage amplifier with two inputs and one output.", start: 0.1, end: 6.88 },
+                      { id: "s16_2", text: "When connected with negative feedback, an ideal op-amp obeys two simple Golden Rules.", start: 6.83, end: 12.64 },
+                      { id: "s16_3", text: "Rule One: No current flows into either input terminal: i+ = 0 and i− = 0, because input impedance is infinite.", start: 12.64, end: 21.76 },
+                      { id: "s16_4", text: "Rule Two: The negative feedback forces the differential input voltage to zero, creating a virtual short: v+ = v−.", start: 21.76, end: 30.99 },
+                      { id: "s16_5", text: "With these two rules, analyzing complex op-amp amplifier circuits requires only basic nodal algebra.", start: 30.99, end: 38.25 }
                     ],
                     comparison: {
                       left: {
@@ -1833,12 +1833,12 @@ var COURSES_CATALOG = [
                   {
                     title: "1. The Inverting and Non-Inverting Amplifiers",
                     sentences: [
-                      { id: "s17_1", text: "The two most common linear amplifier topologies are the Inverting and Non-Inverting amplifiers.", start: 0.1, end: 8.0 },
-                      { id: "s17_2", text: "In an Inverting Amplifier, the input signal connects through R1 to the inverting input, with feedback resistor Rf.", start: 8.0, end: 17.5 },
-                      { id: "s17_3", text: "The closed-loop voltage gain is: Av = - (Rf / R1). The negative sign indicates a 180 degree phase inversion.", start: 17.5, end: 27.5 },
-                      { id: "s17_4", text: "In a Non-Inverting Amplifier, the input connects directly to the non-inverting input.", start: 27.5, end: 34.0 },
-                      { id: "s17_5", text: "The voltage gain is: Av = 1 + (Rf / R1), which is always positive and greater than or equal to one.", start: 34.0, end: 43.5 },
-                      { id: "s17_6", text: "If Rf is zero and R1 is omitted, the gain is exactly 1. This is a Voltage Follower buffer with infinite input impedance and zero output impedance.", start: 43.5, end: 56.0 }
+                      { id: "s17_1", text: "The two most common linear amplifier topologies are the Inverting and Non-Inverting amplifiers.", start: 0.1, end: 6.27 },
+                      { id: "s17_2", text: "In an Inverting Amplifier, the input signal connects through R1 to the inverting input, with feedback resistor Rf.", start: 6.22, end: 13.84 },
+                      { id: "s17_3", text: "The closed-loop voltage gain is: Av = - (Rf / R1). The negative sign indicates a 180 degree phase inversion.", start: 13.84, end: 19.19 },
+                      { id: "s17_4", text: "In a Non-Inverting Amplifier, the input connects directly to the non-inverting input.", start: 19.19, end: 23.77 },
+                      { id: "s17_5", text: "The voltage gain is: Av = 1 + (Rf / R1), which is always positive and greater than or equal to one.", start: 23.77, end: 29.44 },
+                      { id: "s17_6", text: "If Rf is zero and R1 is omitted, the gain is exactly 1. This is a Voltage Follower buffer with infinite input impedance and zero output impedance.", start: 29.44, end: 37.98 }
                     ],
                     comparison: {
                       left: {
@@ -1956,11 +1956,11 @@ var COURSES_CATALOG = [
                   {
                     title: "1. PN Junction Physics and Diode Behavior",
                     sentences: [
-                      { id: "s18_1", text: "A semiconductor diode is formed by joining P-type and N-type silicon.", start: 0.1, end: 6.5 },
-                      { id: "s18_2", text: "It acts as a one-way valve for electric current.", start: 6.5, end: 10.5 },
-                      { id: "s18_3", text: "When forward-biased (anode more positive than cathode), standard silicon diodes conduct with a constant forward voltage drop of approximately 0.7 Volts.", start: 10.5, end: 22.0 },
-                      { id: "s18_4", text: "When reverse-biased, the diode blocks current completely up to its breakdown voltage.", start: 22.0, end: 28.5 },
-                      { id: "s18_5", text: "Four diodes configured in a Full-Wave Bridge Rectifier convert alternating AC current into pulsating direct DC current.", start: 28.5, end: 39.0 }
+                      { id: "s18_1", text: "A semiconductor diode is formed by joining P-type and N-type silicon.", start: 0.1, end: 5.1 },
+                      { id: "s18_2", text: "It acts as a one-way valve for electric current.", start: 5.05, end: 8.56 },
+                      { id: "s18_3", text: "When forward-biased (anode more positive than cathode), standard silicon diodes conduct with a constant forward voltage drop of approximately 0.7 Volts.", start: 8.56, end: 18.95 },
+                      { id: "s18_4", text: "When reverse-biased, the diode blocks current completely up to its breakdown voltage.", start: 18.95, end: 24.66 },
+                      { id: "s18_5", text: "Four diodes configured in a Full-Wave Bridge Rectifier convert alternating AC current into pulsating direct DC current.", start: 24.66, end: 32.54 }
                     ],
                     comparison: {
                       left: {
@@ -2046,11 +2046,11 @@ var COURSES_CATALOG = [
                   {
                     title: "1. BJTs vs MOSFETs",
                     sentences: [
-                      { id: "s19_1", text: "Transistors are the building blocks of all modern electronics, serving two main functions: switching and amplification.", start: 0.1, end: 9.0 },
-                      { id: "s19_2", text: "Bipolar Junction Transistors (BJTs) are current-controlled devices.", start: 9.0, end: 14.5 },
-                      { id: "s19_3", text: "A small base current Ib controls a large collector current Ic according to the current gain: Ic = beta × Ib.", start: 14.5, end: 24.5 },
-                      { id: "s19_4", text: "MOSFETs are voltage-controlled devices.", start: 24.5, end: 29.0 },
-                      { id: "s19_5", text: "A voltage applied between Gate and Source (VGS) opens a conductive channel between Drain and Source, with virtually zero gate current.", start: 29.0, end: 40.5 },
+                      { id: "s19_1", text: "Transistors are the building blocks of all modern electronics, serving two main functions: switching and amplification.", start: 0.1, end: 7.79 },
+                      { id: "s19_2", text: "Bipolar Junction Transistors (BJTs) are current-controlled devices.", start: 7.74, end: 13.5 },
+                      { id: "s19_3", text: "A small base current Ib controls a large collector current Ic according to the current gain: Ic = beta × Ib.", start: 13.5, end: 23.95 },
+                      { id: "s19_4", text: "MOSFETs are voltage-controlled devices.", start: 23.95, end: 33.26 },
+                      { id: "s19_5", text: "A voltage applied between Gate and Source (VGS) opens a conductive channel between Drain and Source, with virtually zero gate current.", start: 33.26, end: 42.31 },
                       { id: "s19_6", text: "Because MOSFETs require no continuous gate current and have ultra-low on-resistance RDS(on), they dominate modern high-power switching.", start: 40.5, end: 52.0 }
                     ],
                     comparison: {
@@ -2162,12 +2162,12 @@ var COURSES_CATALOG = [
                   {
                     title: "1. The Four Non-Negotiable Hardware Rules",
                     sentences: [
-                      { id: "s20_1", text: "In textbooks, wires have zero resistance, capacitors have zero inductance, and ground is an equipotential plane.", start: 0.1, end: 9.0 },
-                      { id: "s20_2", text: "In real hardware, every trace has parasitic resistance and inductance, and digital switching generates fast current spikes.", start: 9.0, end: 18.5 },
-                      { id: "s20_3", text: "Rule One: Always place a 0.1 microfarad ceramic bypass capacitor as close as physically possible to the power pin of every IC chip.", start: 18.5, end: 29.5 },
-                      { id: "s20_4", text: "This supplies local high-frequency current pulses without voltage droop across long PCB traces.", start: 29.5, end: 37.0 },
-                      { id: "s20_5", text: "Rule Two: Use a continuous, unbroken Ground Plane on 2-layer and 4-layer PCBs to minimize ground loop area and EMI noise.", start: 37.0, end: 47.5 },
-                      { id: "s20_6", text: "Rule Three: Never leave high-impedance CMOS inputs floating. Always pull them up or down with a 10k resistor.", start: 47.5, end: 57.0 }
+                      { id: "s20_1", text: "In textbooks, wires have zero resistance, capacitors have zero inductance, and ground is an equipotential plane.", start: 0.1, end: 8.22 },
+                      { id: "s20_2", text: "In real hardware, every trace has parasitic resistance and inductance, and digital switching generates fast current spikes.", start: 8.18, end: 16.26 },
+                      { id: "s20_3", text: "Rule One: Always place a 0.1 microfarad ceramic bypass capacitor as close as physically possible to the power pin of every IC chip.", start: 16.26, end: 25.67 },
+                      { id: "s20_4", text: "This supplies local high-frequency current pulses without voltage droop across long PCB traces.", start: 25.68, end: 32.24 },
+                      { id: "s20_5", text: "Rule Two: Use a continuous, unbroken Ground Plane on 2-layer and 4-layer PCBs to minimize ground loop area and EMI noise.", start: 32.24, end: 41.8 },
+                      { id: "s20_6", text: "Rule Three: Never leave high-impedance CMOS inputs floating. Always pull them up or down with a 10k resistor.", start: 41.8, end: 46.49 }
                     ],
                     comparison: {
                       left: {

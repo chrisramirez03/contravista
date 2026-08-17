@@ -1,7 +1,7 @@
 {
   "lessonId": "lesson-3-1",
   "voice": "en-US-ChristopherNeural",
-  "totalDuration": 78.59,
+  "totalDuration": 49.45,
   "sentences": [
     {
       "text": "Analyzing AC circuits with sine and cosine differential equations is extremely tedious.",
@@ -14,29 +14,57 @@
       "end": 18.86
     },
     {
-      "text": "A sinusoid v(t) = V_m cos(omega t + phi) becomes the phasor V = V_m ∠ phi.",
+      "text": "A sinusoid v(t) = Vm cos(ω t + phi) becomes the phasor V = Vm ∠ phi.",
       "start": 18.86,
-      "end": 28.84
+      "end": 27.76
     },
     {
-      "text": "In the phasor domain, resistors have impedance Z_R = R. Inductors have impedance Z_L = j omega L, where voltage leads current by 90 degrees.",
-      "start": 28.84,
-      "end": 40.31
+      "text": "In the phasor domain, resistors have impedance ZR = R. Inductors have impedance ZL = j ω L, where voltage leads current by 90 degrees.",
+      "start": 27.76,
+      "end": 38.38
     },
     {
-      "text": "Capacitors have impedance Z_C = 1 / (j omega C) = -j / (omega C), where current leads voltage by 90 degrees.",
-      "start": 40.31,
-      "end": 51.85
+      "text": "Capacitors have impedance ZC = 1 / (j ω C) = -j / (ω C), where current leads voltage by 90 degrees.",
+      "start": 38.38,
+      "end": 49.45
+    }
+  ],
+  "speechItems": [
+    {
+      "type": "sentence",
+      "id": "s13_1",
+      "text": "Analyzing AC circuits with sine and cosine differential equations is extremely tedious.",
+      "spoken": "Analyzing AC circuits with sine and cosine differential equations is extremely tedious."
     },
     {
-      "text": "strong>The Classic Mnemonic 'ELI the ICE man':</strong> In an Inductor ($L$), Voltage ($E$) leads Current ($I$) $\\\\rightarrow$ <strong>ELI</strong>.",
-      "start": 51.85,
-      "end": 67.4
+      "type": "sentence",
+      "id": "s13_2",
+      "text": "By using Euler's formula: e^(j theta) = cos(theta) + j sin(theta), we transform time-domain sinusoids into complex vectors called Phasors.",
+      "spoken": "By using Euler's formula: e^(j theta) = cos(theta) + j sin(theta), we transform time-domain sinusoids into complex vectors called Phasors."
     },
     {
-      "text": "In a Capacitor ($C$), Current ($I$) leads Voltage ($E$) $\\\\rightarrow$ <strong>ICE</strong>.",
-      "start": 67.4,
-      "end": 78.59
+      "type": "sentence",
+      "id": "s13_3",
+      "text": "A sinusoid v(t) = Vm cos(ω t + phi) becomes the phasor V = Vm ∠ phi.",
+      "spoken": "A sinusoid v(t) = Vm cos(ω t + phi) becomes the phasor V = Vm ∠ phi."
+    },
+    {
+      "type": "sentence",
+      "id": "s13_4",
+      "text": "In the phasor domain, resistors have impedance ZR = R.",
+      "spoken": "In the phasor domain, resistors have impedance ZR = R."
+    },
+    {
+      "type": "sentence",
+      "id": "s13_5",
+      "text": "Inductors have impedance ZL = j ω L, where voltage leads current by 90 degrees.",
+      "spoken": "Inductors have impedance ZL = j ω L, where voltage leads current by 90 degrees."
+    },
+    {
+      "type": "sentence",
+      "id": "s13_6",
+      "text": "Capacitors have impedance ZC = 1 / (j ω C) = -j / (ω C), where current leads voltage by 90 degrees.",
+      "spoken": "Capacitors have impedance ZC = 1 / (j ω C) = -j / (ω C), where current leads voltage by 90 degrees."
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "lessonId": "lesson-4-7",
   "voice": "en-US-ChristopherNeural",
-  "totalDuration": 68.83,
+  "totalDuration": 50.7,
   "sentences": [
     {
       "text": "In textbooks, wires have zero resistance, capacitors have zero inductance, and ground is an equipotential plane.",
@@ -34,19 +34,47 @@
       "end": 46.49
     },
     {
-      "text": "Always pull them up or down with a 10k resistor.",
+      "text": "Always pull them up or down with a 10 kilo ohm resistor.",
       "start": 46.49,
-      "end": 50.22
+      "end": 50.7
+    }
+  ],
+  "speechItems": [
+    {
+      "type": "sentence",
+      "id": "s20_1",
+      "text": "In textbooks, wires have zero resistance, capacitors have zero inductance, and ground is an equipotential plane.",
+      "spoken": "In textbooks, wires have zero resistance, capacitors have zero inductance, and ground is an equipotential plane."
     },
     {
-      "text": "strong>Horowitz & Hill Pro-Tip:</strong> The #1 reason microcontroller and op-amp boards glitch, reset intermittently, or oscillate is missing decoupling capacitors.",
-      "start": 50.23,
-      "end": 61.29
+      "type": "sentence",
+      "id": "s20_2",
+      "text": "In real hardware, every trace has parasitic resistance and inductance, and digital switching generates fast current spikes.",
+      "spoken": "In real hardware, every trace has parasitic resistance and inductance, and digital switching generates fast current spikes."
     },
     {
-      "text": "Place a 100nF (0.1µF) X7R ceramic cap at every single power pin!",
-      "start": 61.29,
-      "end": 68.83
+      "type": "sentence",
+      "id": "s20_3",
+      "text": "Rule One: Always place a 0.1 microfarad ceramic bypass capacitor as close as physically possible to the power pin of every IC chip.",
+      "spoken": "Rule One: Always place a 0.1 microfarad ceramic bypass capacitor as close as physically possible to the power pin of every IC chip."
+    },
+    {
+      "type": "sentence",
+      "id": "s20_4",
+      "text": "This supplies local high-frequency current pulses without voltage droop across long PCB traces.",
+      "spoken": "This supplies local high-frequency current pulses without voltage droop across long PCB traces."
+    },
+    {
+      "type": "sentence",
+      "id": "s20_5",
+      "text": "Rule Two: Use a continuous, unbroken Ground Plane on 2-layer and 4-layer PCBs to minimize ground loop area and EMI noise.",
+      "spoken": "Rule Two: Use a continuous, unbroken Ground Plane on 2-layer and 4-layer PCBs to minimize ground loop area and EMI noise."
+    },
+    {
+      "type": "sentence",
+      "id": "s20_6",
+      "text": "Rule Three: Never leave high-impedance CMOS inputs floating. Always pull them up or down with a 10k resistor.",
+      "spoken": "Rule Three: Never leave high-impedance CMOS inputs floating. Always pull them up or down with a 10 kilo ohm resistor."
     }
   ]
 }

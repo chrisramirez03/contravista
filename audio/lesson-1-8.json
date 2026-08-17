@@ -1,42 +1,59 @@
 {
   "lessonId": "lesson-1-8",
   "voice": "en-US-ChristopherNeural",
-  "totalDuration": 67.86,
+  "totalDuration": 35.69,
   "sentences": [
     {
-      "text": "In 1883, French engineer Léon Charles Thévenin proved that any linear two-terminal circuit of resistors and sources can be replaced by an equivalent circuit consisting of a single voltage source V_Th in series with a resistor R_Th.",
+      "text": "In 1883, French engineer Léon Charles Thévenin proved that any linear two-terminal circuit of resistors and sources can be replaced by an equivalent circuit consisting of a single voltage source VTh in series with a resistor RTh.",
       "start": 0.1,
-      "end": 15.53
+      "end": 14.57
     },
     {
-      "text": "Similarly, Norton's theorem proves the same network can be replaced by an equivalent current source I_N in parallel with a resistor R_N.",
-      "start": 15.47,
-      "end": 24.84
+      "text": "Similarly, Norton's theorem proves the same network can be replaced by an equivalent current source IN in parallel with a resistor RN.",
+      "start": 14.53,
+      "end": 22.93
     },
     {
-      "text": "V_Th is the open-circuit voltage across terminals a-b. I_N is the short-circuit current flowing when a-b are connected.",
-      "start": 24.84,
-      "end": 33.72
+      "text": "VTh is the open-circuit voltage across terminals a-b. IN is the short-circuit current flowing when a-b are connected.",
+      "start": 22.93,
+      "end": 30.8
     },
     {
-      "text": "The equivalent resistance is R_Th = V_oc / I_sc.",
-      "start": 33.73,
-      "end": 40.25
+      "text": "The equivalent resistance is RTh = Voc / Isc.",
+      "start": 30.8,
+      "end": 35.69
+    }
+  ],
+  "speechItems": [
+    {
+      "type": "sentence",
+      "id": "s8_1",
+      "text": "In 1883, French engineer Léon Charles Thévenin proved that any linear two-terminal circuit of resistors and sources can be replaced by an equivalent circuit consisting of a single voltage source VTh in series with a resistor RTh.",
+      "spoken": "In 1883, French engineer Léon Charles Thévenin proved that any linear two-terminal circuit of resistors and sources can be replaced by an equivalent circuit consisting of a single voltage source VTh in series with a resistor RTh."
     },
     {
-      "text": "When connecting a load resistor R_L to a practical power source with internal resistance R_Th, how do you maximize the power delivered to the load?",
-      "start": 40.25,
-      "end": 50.16
+      "type": "sentence",
+      "id": "s8_2",
+      "text": "Similarly, Norton's theorem proves the same network can be replaced by an equivalent current source IN in parallel with a resistor RN.",
+      "spoken": "Similarly, Norton's theorem proves the same network can be replaced by an equivalent current source IN in parallel with a resistor RN."
     },
     {
-      "text": "Maximum power transfer occurs when the load resistance exactly equals the Thevenin resistance: R_L = R_Th.",
-      "start": 50.16,
-      "end": 59.23
+      "type": "sentence",
+      "id": "s8_3",
+      "text": "VTh is the open-circuit voltage across terminals a-b.",
+      "spoken": "VTh is the open-circuit voltage across terminals a-b."
     },
     {
-      "text": "The maximum power delivered is: P_max = V_Th² / (4 R_Th).",
-      "start": 59.23,
-      "end": 67.86
+      "type": "sentence",
+      "id": "s8_4",
+      "text": "IN is the short-circuit current flowing when a-b are connected.",
+      "spoken": "IN is the short-circuit current flowing when a-b are connected."
+    },
+    {
+      "type": "sentence",
+      "id": "s8_5",
+      "text": "The equivalent resistance is RTh = Voc / Isc.",
+      "spoken": "The equivalent resistance is RTh = Voc / Isc."
     }
   ]
 }

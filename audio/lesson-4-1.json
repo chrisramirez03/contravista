@@ -1,7 +1,7 @@
 {
   "lessonId": "lesson-4-1",
   "voice": "en-US-ChristopherNeural",
-  "totalDuration": 40.24,
+  "totalDuration": 38.25,
   "sentences": [
     {
       "text": "An Operational Amplifier is a high-gain differential voltage amplifier with two inputs and one output.",
@@ -14,19 +14,51 @@
       "end": 12.64
     },
     {
-      "text": "Rule One: No current flows into either input terminal: i_plus = 0 and i_minus = 0, because input impedance is infinite.",
+      "text": "Rule One: No current flows into either input terminal: i+ = 0 and i− = 0, because input impedance is infinite.",
       "start": 12.64,
-      "end": 22.98
+      "end": 21.76
     },
     {
-      "text": "Rule Two: The negative feedback forces the differential input voltage to zero, creating a virtual short: v_plus = v_minus.",
-      "start": 22.98,
-      "end": 32.98
+      "text": "Rule Two: The negative feedback forces the differential input voltage to zero, creating a virtual short: v+ = v−.",
+      "start": 21.76,
+      "end": 30.99
     },
     {
       "text": "With these two rules, analyzing complex op-amp amplifier circuits requires only basic nodal algebra.",
-      "start": 32.98,
-      "end": 40.24
+      "start": 30.99,
+      "end": 38.25
+    }
+  ],
+  "speechItems": [
+    {
+      "type": "sentence",
+      "id": "s16_1",
+      "text": "An Operational Amplifier is a high-gain differential voltage amplifier with two inputs and one output.",
+      "spoken": "An Operational Amplifier is a high-gain differential voltage amplifier with two inputs and one output."
+    },
+    {
+      "type": "sentence",
+      "id": "s16_2",
+      "text": "When connected with negative feedback, an ideal op-amp obeys two simple Golden Rules.",
+      "spoken": "When connected with negative feedback, an ideal op-amp obeys two simple Golden Rules."
+    },
+    {
+      "type": "sentence",
+      "id": "s16_3",
+      "text": "Rule One: No current flows into either input terminal: i+ = 0 and i− = 0, because input impedance is infinite.",
+      "spoken": "Rule One: No current flows into either input terminal: i+ = 0 and i− = 0, because input impedance is infinite."
+    },
+    {
+      "type": "sentence",
+      "id": "s16_4",
+      "text": "Rule Two: The negative feedback forces the differential input voltage to zero, creating a virtual short: v+ = v−.",
+      "spoken": "Rule Two: The negative feedback forces the differential input voltage to zero, creating a virtual short: v+ = v−."
+    },
+    {
+      "type": "sentence",
+      "id": "s16_5",
+      "text": "With these two rules, analyzing complex op-amp amplifier circuits requires only basic nodal algebra.",
+      "spoken": "With these two rules, analyzing complex op-amp amplifier circuits requires only basic nodal algebra."
     }
   ]
 }

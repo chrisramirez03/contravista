@@ -1,7 +1,7 @@
 {
   "lessonId": "lesson-4-6",
   "voice": "en-US-ChristopherNeural",
-  "totalDuration": 46.12,
+  "totalDuration": 42.31,
   "sentences": [
     {
       "text": "Transistors are the building blocks of all modern electronics, serving two main functions: switching and amplification.",
@@ -14,24 +14,57 @@
       "end": 13.5
     },
     {
-      "text": "A small base current I_b controls a large collector current I_c according to the current gain: I_c = beta × I_b.",
+      "text": "A small base current Ib controls a large collector current Ic according to the current gain: Ic = beta × Ib. MOSFETs are voltage-controlled devices.",
       "start": 13.5,
-      "end": 23.59
+      "end": 23.95
     },
     {
+      "text": "A voltage applied between Gate and Source (VGS) opens a conductive channel between Drain and Source, with virtually zero gate current.",
+      "start": 23.95,
+      "end": 33.26
+    },
+    {
+      "text": "Because MOSFETs require no continuous gate current and have ultra-low on-resistance RDS(on), they dominate modern high-power switching.",
+      "start": 33.26,
+      "end": 42.31
+    }
+  ],
+  "speechItems": [
+    {
+      "type": "sentence",
+      "id": "s19_1",
+      "text": "Transistors are the building blocks of all modern electronics, serving two main functions: switching and amplification.",
+      "spoken": "Transistors are the building blocks of all modern electronics, serving two main functions: switching and amplification."
+    },
+    {
+      "type": "sentence",
+      "id": "s19_2",
+      "text": "Bipolar Junction Transistors (BJTs) are current-controlled devices.",
+      "spoken": "Bipolar Junction Transistors (BJTs) are current-controlled devices."
+    },
+    {
+      "type": "sentence",
+      "id": "s19_3",
+      "text": "A small base current Ib controls a large collector current Ic according to the current gain: Ic = beta × Ib.",
+      "spoken": "A small base current Ib controls a large collector current Ic according to the current gain: Ic = beta × Ib."
+    },
+    {
+      "type": "sentence",
+      "id": "s19_4",
       "text": "MOSFETs are voltage-controlled devices.",
-      "start": 23.59,
-      "end": 26.79
+      "spoken": "MOSFETs are voltage-controlled devices."
     },
     {
-      "text": "A voltage applied between Gate and Source (V_GS) opens a conductive channel between Drain and Source, with virtually zero gate current.",
-      "start": 26.79,
-      "end": 36.6
+      "type": "sentence",
+      "id": "s19_5",
+      "text": "A voltage applied between Gate and Source (VGS) opens a conductive channel between Drain and Source, with virtually zero gate current.",
+      "spoken": "A voltage applied between Gate and Source (VGS) opens a conductive channel between Drain and Source, with virtually zero gate current."
     },
     {
-      "text": "Because MOSFETs require no continuous gate current and have ultra-low on-resistance R_DS(on), they dominate modern high-power switching.",
-      "start": 36.6,
-      "end": 46.12
+      "type": "sentence",
+      "id": "s19_6",
+      "text": "Because MOSFETs require no continuous gate current and have ultra-low on-resistance RDS(on), they dominate modern high-power switching.",
+      "spoken": "Because MOSFETs require no continuous gate current and have ultra-low on-resistance RDS(on), they dominate modern high-power switching."
     }
   ]
 }
