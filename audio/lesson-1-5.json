@@ -1,7 +1,7 @@
 {
   "lessonId": "lesson-1-5",
   "voice": "en-US-ChristopherNeural",
-  "totalDuration": 37.38,
+  "totalDuration": 79.71,
   "sentences": [
     {
       "text": "Nodal analysis provides a general procedure for analyzing a circuit using node voltages as the circuit variables.",
@@ -19,9 +19,100 @@
       "end": 19.29
     },
     {
-      "text": "Third, apply Kirchhoff's Current Law to each non-reference node, expressing branch currents using Ohm's Law: i = (v_high - v_low) / R. Fourth, solve the resulting system of simultaneous linear equations to determine all unknown node voltages.",
+      "text": "Third, apply Kirchhoff's Current Law to each non-reference node, expressing branch currents using Ohm's Law: i = (vhigh - vlow) / R. Fourth, solve the resulting system of simultaneous linear equations to determine all unknown node voltages.",
       "start": 19.29,
-      "end": 37.38
+      "end": 36.29
+    },
+    {
+      "text": "Node Equation Standard Form: At node 1: v 1 - v 2 over R 1 + v 1 - 0 over R 2 = I source .",
+      "start": 36.29,
+      "end": 45.51
+    },
+    {
+      "text": "Sum of outgoing branch currents equals sum of incoming source currents.",
+      "start": 45.51,
+      "end": 50.23
+    },
+    {
+      "text": "What happens when an ideal voltage source is connected between two non-reference nodes?",
+      "start": 50.23,
+      "end": 55.61
+    },
+    {
+      "text": "The current through the voltage source is unknown, making standard KCL impossible at either individual node.",
+      "start": 55.61,
+      "end": 62.46
+    },
+    {
+      "text": "To solve this, we enclose the voltage source and its two nodes inside a generalized boundary called a Supernode.",
+      "start": 62.46,
+      "end": 69.78
+    },
+    {
+      "text": "We apply KCL to the entire supernode perimeter, and use the source constraint equation v2 - v1 = Vsource as our supplementary equation.",
+      "start": 69.78,
+      "end": 79.71
+    }
+  ],
+  "speechItems": [
+    {
+      "type": "sentence",
+      "id": "s5_1",
+      "text": "Nodal analysis provides a general procedure for analyzing a circuit using node voltages as the circuit variables.",
+      "spoken": "Nodal analysis provides a general procedure for analyzing a circuit using node voltages as the circuit variables."
+    },
+    {
+      "type": "sentence",
+      "id": "s5_2",
+      "text": "First, select a reference node (Ground, 0V).",
+      "spoken": "First, select a reference node (Ground, 0V)."
+    },
+    {
+      "type": "sentence",
+      "id": "s5_3",
+      "text": "Second, label the non-reference node voltages as v1, v2, up to vn-1.",
+      "spoken": "Second, label the non-reference node voltages as v1, v2, up to vn-1."
+    },
+    {
+      "type": "sentence",
+      "id": "s5_4",
+      "text": "Third, apply Kirchhoff's Current Law to each non-reference node, expressing branch currents using Ohm's Law: i = (vhigh - vlow) / R.",
+      "spoken": "Third, apply Kirchhoff's Current Law to each non-reference node, expressing branch currents using Ohm's Law: i = (vhigh - vlow) / R."
+    },
+    {
+      "type": "sentence",
+      "id": "s5_5",
+      "text": "Fourth, solve the resulting system of simultaneous linear equations to determine all unknown node voltages.",
+      "spoken": "Fourth, solve the resulting system of simultaneous linear equations to determine all unknown node voltages."
+    },
+    {
+      "type": "callout",
+      "text": "<strong>Node Equation Standard Form:</strong> At node 1: $\\frac{v_1 - v_2}{R_1} + \\frac{v_1 - 0}{R_2} = I_{\\text{source}}$. Sum of outgoing branch currents equals sum of incoming source currents.",
+      "spoken": "Node Equation Standard Form: At node 1: v 1 - v 2 over R 1 + v 1 - 0 over R 2 = I source . Sum of outgoing branch currents equals sum of incoming source currents."
+    },
+    {
+      "type": "sentence",
+      "id": "s5_6",
+      "text": "What happens when an ideal voltage source is connected between two non-reference nodes?",
+      "spoken": "What happens when an ideal voltage source is connected between two non-reference nodes?"
+    },
+    {
+      "type": "sentence",
+      "id": "s5_7",
+      "text": "The current through the voltage source is unknown, making standard KCL impossible at either individual node.",
+      "spoken": "The current through the voltage source is unknown, making standard KCL impossible at either individual node."
+    },
+    {
+      "type": "sentence",
+      "id": "s5_8",
+      "text": "To solve this, we enclose the voltage source and its two nodes inside a generalized boundary called a Supernode.",
+      "spoken": "To solve this, we enclose the voltage source and its two nodes inside a generalized boundary called a Supernode."
+    },
+    {
+      "type": "sentence",
+      "id": "s5_9",
+      "text": "We apply KCL to the entire supernode perimeter, and use the source constraint equation v2 - v1 = Vsource as our supplementary equation.",
+      "spoken": "We apply KCL to the entire supernode perimeter, and use the source constraint equation v2 - v1 = Vsource as our supplementary equation."
     }
   ]
 }

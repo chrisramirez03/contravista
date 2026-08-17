@@ -1,7 +1,7 @@
 {
   "lessonId": "lesson-4-7",
   "voice": "en-US-ChristopherNeural",
-  "totalDuration": 50.7,
+  "totalDuration": 71.89,
   "sentences": [
     {
       "text": "In textbooks, wires have zero resistance, capacitors have zero inductance, and ground is an equipotential plane.",
@@ -37,6 +37,16 @@
       "text": "Always pull them up or down with a 10 kilo ohm resistor.",
       "start": 46.49,
       "end": 50.7
+    },
+    {
+      "text": "Horowitz & Hill Pro-Tip: The #1 reason microcontroller and op-amp boards glitch, reset intermittently, or oscillate is missing decoupling capacitors.",
+      "start": 50.7,
+      "end": 60.81
+    },
+    {
+      "text": "Place a 100 nF ( 0.1 micro F ) X7R ceramic cap at every single power pin to eliminate V droop = L trace di over dt !",
+      "start": 60.81,
+      "end": 71.89
     }
   ],
   "speechItems": [
@@ -75,6 +85,11 @@
       "id": "s20_6",
       "text": "Rule Three: Never leave high-impedance CMOS inputs floating. Always pull them up or down with a 10k resistor.",
       "spoken": "Rule Three: Never leave high-impedance CMOS inputs floating. Always pull them up or down with a 10 kilo ohm resistor."
+    },
+    {
+      "type": "callout",
+      "text": "<strong>Horowitz & Hill Pro-Tip:</strong> The #1 reason microcontroller and op-amp boards glitch, reset intermittently, or oscillate is missing decoupling capacitors. Place a $100\\text{ nF}$ ($0.1\\,\\mu\\text{F}$) X7R ceramic cap at every single power pin to eliminate $V_{\\text{droop}} = L_{\\text{trace}} \\frac{di}{dt}$!",
+      "spoken": "Horowitz & Hill Pro-Tip: The #1 reason microcontroller and op-amp boards glitch, reset intermittently, or oscillate is missing decoupling capacitors. Place a 100 nF ( 0.1 micro F ) X7R ceramic cap at every single power pin to eliminate V droop = L trace di over dt !"
     }
   ]
 }

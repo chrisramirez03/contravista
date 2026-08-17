@@ -1,7 +1,7 @@
 {
   "lessonId": "lesson-2-3",
   "voice": "en-US-ChristopherNeural",
-  "totalDuration": 43.69,
+  "totalDuration": 61.2,
   "sentences": [
     {
       "text": "When a DC voltage source is connected to a series resistor and capacitor, the capacitor does not charge instantly.",
@@ -9,24 +9,66 @@
       "end": 7.42
     },
     {
-      "text": "Instead, the voltage rises exponentially according to the differential equation solution: v(t) = V_s × (1 - e^(-t / τ)).",
+      "text": "Instead, the voltage rises exponentially according to the differential equation solution: v(t) = Vs × (1 - e^(-t / τ)).",
       "start": 7.38,
-      "end": 19.04
+      "end": 18.57
     },
     {
       "text": "The parameter tau (τ = R × C) is the circuit Time Constant, measured in seconds.",
-      "start": 19.04,
-      "end": 26.03
+      "start": 18.57,
+      "end": 25.56
     },
     {
       "text": "After one time constant (t = 1τ), the capacitor charges to 63.2% of its final voltage.",
-      "start": 26.02,
-      "end": 34.3
+      "start": 25.56,
+      "end": 33.84
     },
     {
       "text": "After five time constants (t = 5τ), the capacitor is over 99.3% charged, considered fully steady state.",
-      "start": 34.3,
-      "end": 43.69
+      "start": 33.84,
+      "end": 43.22
+    },
+    {
+      "text": "The 5-Tau Rule of Thumb: In practical engineering, any first-order RC or RL circuit reaches steady-state after 5τ ( v(5 tau ) = V s(1 - e to the power of -5) is approximately 99.33 % settled ).",
+      "start": 43.23,
+      "end": 61.2
+    }
+  ],
+  "speechItems": [
+    {
+      "type": "sentence",
+      "id": "s11_1",
+      "text": "When a DC voltage source is connected to a series resistor and capacitor, the capacitor does not charge instantly.",
+      "spoken": "When a DC voltage source is connected to a series resistor and capacitor, the capacitor does not charge instantly."
+    },
+    {
+      "type": "sentence",
+      "id": "s11_2",
+      "text": "Instead, the voltage rises exponentially according to the differential equation solution: v(t) = Vs × (1 - e^(-t / τ)).",
+      "spoken": "Instead, the voltage rises exponentially according to the differential equation solution: v(t) = Vs × (1 - e^(-t / τ))."
+    },
+    {
+      "type": "sentence",
+      "id": "s11_3",
+      "text": "The parameter tau (τ = R × C) is the circuit Time Constant, measured in seconds.",
+      "spoken": "The parameter tau (τ = R × C) is the circuit Time Constant, measured in seconds."
+    },
+    {
+      "type": "sentence",
+      "id": "s11_4",
+      "text": "After one time constant (t = 1τ), the capacitor charges to 63.2% of its final voltage.",
+      "spoken": "After one time constant (t = 1τ), the capacitor charges to 63.2% of its final voltage."
+    },
+    {
+      "type": "sentence",
+      "id": "s11_5",
+      "text": "After five time constants (t = 5τ), the capacitor is over 99.3% charged, considered fully steady state.",
+      "spoken": "After five time constants (t = 5τ), the capacitor is over 99.3% charged, considered fully steady state."
+    },
+    {
+      "type": "callout",
+      "text": "<strong>The 5-Tau Rule of Thumb:</strong> In practical engineering, any first-order RC or RL circuit reaches steady-state after <strong>5τ</strong> ($v(5\\tau) = V_s(1 - e^{-5}) \\approx 99.33\\%\\text{ settled}$).",
+      "spoken": "The 5-Tau Rule of Thumb: In practical engineering, any first-order RC or RL circuit reaches steady-state after 5τ ( v(5 tau ) = V s(1 - e to the power of -5) is approximately 99.33 % settled )."
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "lessonId": "lesson-1-8",
   "voice": "en-US-ChristopherNeural",
-  "totalDuration": 35.69,
+  "totalDuration": 77.38,
   "sentences": [
     {
       "text": "In 1883, French engineer Léon Charles Thévenin proved that any linear two-terminal circuit of resistors and sources can be replaced by an equivalent circuit consisting of a single voltage source VTh in series with a resistor RTh.",
@@ -22,6 +22,31 @@
       "text": "The equivalent resistance is RTh = Voc / Isc.",
       "start": 30.8,
       "end": 35.69
+    },
+    {
+      "text": "When connecting a load resistor RL to a practical power source with internal resistance RTh, how do you maximize the power delivered to the load?",
+      "start": 35.69,
+      "end": 44.67
+    },
+    {
+      "text": "Maximum power transfer occurs when the load resistance exactly equals the Thevenin resistance: RL = RTh.",
+      "start": 44.67,
+      "end": 52.7
+    },
+    {
+      "text": "The maximum power delivered is: Pmax = VTh squared / (4 RTh).",
+      "start": 52.7,
+      "end": 59.26
+    },
+    {
+      "text": "Maximum Power Rule: Maximum power transfer occurs when R L = R Th .",
+      "start": 59.26,
+      "end": 65.3
+    },
+    {
+      "text": "At this matched condition, transfer efficiency is eta = 50 % , and maximum delivered power is: P max = frac V Th squared 4 R Th [ Watts, W ]",
+      "start": 65.3,
+      "end": 77.38
     }
   ],
   "speechItems": [
@@ -54,6 +79,29 @@
       "id": "s8_5",
       "text": "The equivalent resistance is RTh = Voc / Isc.",
       "spoken": "The equivalent resistance is RTh = Voc / Isc."
+    },
+    {
+      "type": "sentence",
+      "id": "s8_6",
+      "text": "When connecting a load resistor RL to a practical power source with internal resistance RTh, how do you maximize the power delivered to the load?",
+      "spoken": "When connecting a load resistor RL to a practical power source with internal resistance RTh, how do you maximize the power delivered to the load?"
+    },
+    {
+      "type": "sentence",
+      "id": "s8_7",
+      "text": "Maximum power transfer occurs when the load resistance exactly equals the Thevenin resistance: RL = RTh.",
+      "spoken": "Maximum power transfer occurs when the load resistance exactly equals the Thevenin resistance: RL = RTh."
+    },
+    {
+      "type": "sentence",
+      "id": "s8_8",
+      "text": "The maximum power delivered is: Pmax = VTh² / (4 RTh).",
+      "spoken": "The maximum power delivered is: Pmax = VTh squared / (4 RTh)."
+    },
+    {
+      "type": "callout",
+      "text": "<strong>Maximum Power Rule:</strong> Maximum power transfer occurs when $R_L = R_{\\text{Th}}$. At this matched condition, transfer efficiency is $\\eta = 50\\%$, and maximum delivered power is: $P_{\\text{max}} = \\frac{V_{\\text{Th}}^2}{4 R_{\\text{Th}}} \\quad [\\text{Watts, W}]$",
+      "spoken": "Maximum Power Rule: Maximum power transfer occurs when R L = R Th . At this matched condition, transfer efficiency is eta = 50 % , and maximum delivered power is: P max = frac V Th squared 4 R Th [ Watts, W ]"
     }
   ]
 }

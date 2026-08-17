@@ -1,7 +1,7 @@
 {
   "lessonId": "lesson-3-1",
   "voice": "en-US-ChristopherNeural",
-  "totalDuration": 49.45,
+  "totalDuration": 68.61,
   "sentences": [
     {
       "text": "Analyzing AC circuits with sine and cosine differential equations is extremely tedious.",
@@ -27,6 +27,16 @@
       "text": "Capacitors have impedance ZC = 1 / (j ω C) = -j / (ω C), where current leads voltage by 90 degrees.",
       "start": 38.38,
       "end": 49.45
+    },
+    {
+      "text": "The Classic Mnemonic 'ELI the ICE man': In an Inductor ( L ), Voltage ( E ) leads Current ( I ) by 90^ degrees which means that ELI .",
+      "start": 49.45,
+      "end": 60.69
+    },
+    {
+      "text": "In a Capacitor ( C ), Current ( I ) leads Voltage ( E ) by 90^ degrees which means that ICE .",
+      "start": 60.69,
+      "end": 68.61
     }
   ],
   "speechItems": [
@@ -65,6 +75,11 @@
       "id": "s13_6",
       "text": "Capacitors have impedance ZC = 1 / (j ω C) = -j / (ω C), where current leads voltage by 90 degrees.",
       "spoken": "Capacitors have impedance ZC = 1 / (j ω C) = -j / (ω C), where current leads voltage by 90 degrees."
+    },
+    {
+      "type": "callout",
+      "text": "<strong>The Classic Mnemonic 'ELI the ICE man':</strong> In an Inductor ($L$), Voltage ($E$) leads Current ($I$) by $90^\\circ$ $\\implies$ <strong>ELI</strong>. In a Capacitor ($C$), Current ($I$) leads Voltage ($E$) by $90^\\circ$ $\\implies$ <strong>ICE</strong>.",
+      "spoken": "The Classic Mnemonic 'ELI the ICE man': In an Inductor ( L ), Voltage ( E ) leads Current ( I ) by 90^ degrees which means that ELI . In a Capacitor ( C ), Current ( I ) leads Voltage ( E ) by 90^ degrees which means that ICE ."
     }
   ]
 }

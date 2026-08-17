@@ -1,7 +1,7 @@
 {
   "lessonId": "lesson-3-2",
   "voice": "en-US-ChristopherNeural",
-  "totalDuration": 44.43,
+  "totalDuration": 59.91,
   "sentences": [
     {
       "text": "In AC circuits with inductors and capacitors, voltage and current are out of phase.",
@@ -9,24 +9,66 @@
       "end": 5.97
     },
     {
-      "text": "Real Power P, measured in Watts, is the actual power converted into useful work and heat: P = V_rms × I_rms × cos(theta).",
+      "text": "Real Power P, measured in Watts, is the actual power converted into useful work and heat: P = Vrms × Irms × cos(theta).",
       "start": 5.92,
-      "end": 17.23
+      "end": 15.76
     },
     {
-      "text": "Reactive Power Q, measured in VAR, is the power bouncing between the source and reactive fields: Q = V_rms × I_rms × sin(theta).",
-      "start": 17.23,
-      "end": 29.31
+      "text": "Reactive Power Q, measured in VAR, is the power bouncing between the source and reactive fields: Q = Vrms × Irms × sin(theta).",
+      "start": 15.76,
+      "end": 26.4
     },
     {
+      "text": "Apparent Power S, measured in Volt-Amps (VA), is the vector combination: S = sqrt(P squared + Q squared).",
+      "start": 26.4,
+      "end": 35.89
+    },
+    {
+      "text": "The Power Factor is cos(theta) = P / S. Power Factor Correction: Industrial electric motors draw inductive reactive power ( +Q L ).",
+      "start": 35.89,
+      "end": 46.3
+    },
+    {
+      "text": "Utilities penalize factories with low power factors ( PF Capacitor Banks ( -Q C ) cancels out lagging VARs, raising PF approaches 1.0 without changing real active work ( P ).",
+      "start": 46.3,
+      "end": 59.91
+    }
+  ],
+  "speechItems": [
+    {
+      "type": "sentence",
+      "id": "s14_1",
+      "text": "In AC circuits with inductors and capacitors, voltage and current are out of phase.",
+      "spoken": "In AC circuits with inductors and capacitors, voltage and current are out of phase."
+    },
+    {
+      "type": "sentence",
+      "id": "s14_2",
+      "text": "Real Power P, measured in Watts, is the actual power converted into useful work and heat: P = Vrms × Irms × cos(theta).",
+      "spoken": "Real Power P, measured in Watts, is the actual power converted into useful work and heat: P = Vrms × Irms × cos(theta)."
+    },
+    {
+      "type": "sentence",
+      "id": "s14_3",
+      "text": "Reactive Power Q, measured in VAR, is the power bouncing between the source and reactive fields: Q = Vrms × Irms × sin(theta).",
+      "spoken": "Reactive Power Q, measured in VAR, is the power bouncing between the source and reactive fields: Q = Vrms × Irms × sin(theta)."
+    },
+    {
+      "type": "sentence",
+      "id": "s14_4",
       "text": "Apparent Power S, measured in Volt-Amps (VA), is the vector combination: S = sqrt(P² + Q²).",
-      "start": 29.31,
-      "end": 39.64
+      "spoken": "Apparent Power S, measured in Volt-Amps (VA), is the vector combination: S = sqrt(P squared + Q squared)."
     },
     {
+      "type": "sentence",
+      "id": "s14_5",
       "text": "The Power Factor is cos(theta) = P / S.",
-      "start": 39.64,
-      "end": 44.43
+      "spoken": "The Power Factor is cos(theta) = P / S."
+    },
+    {
+      "type": "callout",
+      "text": "<strong>Power Factor Correction:</strong> Industrial electric motors draw inductive reactive power ($+Q_L$). Utilities penalize factories with low power factors ($PF < 0.95$). Connecting parallel <strong>Capacitor Banks ($-Q_C$)</strong> cancels out lagging VARs, raising $PF \\to 1.0$ without changing real active work ($P$).",
+      "spoken": "Power Factor Correction: Industrial electric motors draw inductive reactive power ( +Q L ). Utilities penalize factories with low power factors ( PF Capacitor Banks ( -Q C ) cancels out lagging VARs, raising PF approaches 1.0 without changing real active work ( P )."
     }
   ]
 }

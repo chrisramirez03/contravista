@@ -1,7 +1,7 @@
 {
   "lessonId": "lesson-1-3",
   "voice": "en-US-ChristopherNeural",
-  "totalDuration": 28.81,
+  "totalDuration": 65.47,
   "sentences": [
     {
       "text": "In 1845, Gustav Kirchhoff formulated two laws that allow us to solve any electrical circuit, no matter how complex.",
@@ -22,6 +22,31 @@
       "text": "Kirchhoff's Voltage Law states that the algebraic sum of all voltages around any closed loop must equal zero.",
       "start": 21.88,
       "end": 28.81
+    },
+    {
+      "text": "When two resistors are connected in series across a voltage source, the voltage divides between them proportionally to their resistance.",
+      "start": 28.81,
+      "end": 36.98
+    },
+    {
+      "text": "The output voltage across R2 is proportional to the total resistance.",
+      "start": 36.98,
+      "end": 41.88
+    },
+    {
+      "text": "Voltage dividers are widely used to create reference voltages, bias transistors, and read analog sensors like potentiometers and thermistors.",
+      "start": 41.88,
+      "end": 51.31
+    },
+    {
+      "text": "Voltage Divider Formula: V out = V in times (R 2 over R 1 + R 2) .",
+      "start": 51.31,
+      "end": 58.17
+    },
+    {
+      "text": "If R 1 = R 2 , the voltage divides exactly in half ( V out = frac V in 2 ).",
+      "start": 58.17,
+      "end": 65.47
     }
   ],
   "speechItems": [
@@ -48,6 +73,29 @@
       "id": "s3_4",
       "text": "Kirchhoff's Voltage Law states that the algebraic sum of all voltages around any closed loop must equal zero.",
       "spoken": "Kirchhoff's Voltage Law states that the algebraic sum of all voltages around any closed loop must equal zero."
+    },
+    {
+      "type": "sentence",
+      "id": "s3_5",
+      "text": "When two resistors are connected in series across a voltage source, the voltage divides between them proportionally to their resistance.",
+      "spoken": "When two resistors are connected in series across a voltage source, the voltage divides between them proportionally to their resistance."
+    },
+    {
+      "type": "sentence",
+      "id": "s3_6",
+      "text": "The output voltage across R2 is proportional to the total resistance.",
+      "spoken": "The output voltage across R2 is proportional to the total resistance."
+    },
+    {
+      "type": "sentence",
+      "id": "s3_7",
+      "text": "Voltage dividers are widely used to create reference voltages, bias transistors, and read analog sensors like potentiometers and thermistors.",
+      "spoken": "Voltage dividers are widely used to create reference voltages, bias transistors, and read analog sensors like potentiometers and thermistors."
+    },
+    {
+      "type": "callout",
+      "text": "<strong>Voltage Divider Formula:</strong> $V_{\\text{out}} = V_{\\text{in}} \\cdot \\left(\\frac{R_2}{R_1 + R_2}\\right)$. If $R_1 = R_2$, the voltage divides exactly in half ($V_{\\text{out}} = \\frac{V_{\\text{in}}}{2}$).",
+      "spoken": "Voltage Divider Formula: V out = V in times (R 2 over R 1 + R 2) . If R 1 = R 2 , the voltage divides exactly in half ( V out = frac V in 2 )."
     }
   ]
 }

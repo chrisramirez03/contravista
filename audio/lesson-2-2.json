@@ -1,7 +1,7 @@
 {
   "lessonId": "lesson-2-2",
   "voice": "en-US-ChristopherNeural",
-  "totalDuration": 34.0,
+  "totalDuration": 57.47,
   "sentences": [
     {
       "text": "An inductor consists of a coil of conducting wire wound around a core of air, iron, or ferrite.",
@@ -27,6 +27,53 @@
       "text": "In a steady-state DC circuit where current is constant (di/dt = 0), an ideal inductor has zero voltage drop and acts as a Short Circuit.",
       "start": 23.88,
       "end": 34.0
+    },
+    {
+      "text": "Inductive Kick (Flyback Spike): Abruptly disconnecting an energized inductor creates a dangerous reverse voltage spike ( v = -L di over dt is much greater than V supply ) that destroys transistors.",
+      "start": 34.0,
+      "end": 47.49
+    },
+    {
+      "text": "A reverse-biased flyback diode must be placed anti-parallel across the coil to clamp the spike to V clamp is approximately V supply + 0.7 V .",
+      "start": 47.49,
+      "end": 57.47
+    }
+  ],
+  "speechItems": [
+    {
+      "type": "sentence",
+      "id": "s10_1",
+      "text": "An inductor consists of a coil of conducting wire wound around a core of air, iron, or ferrite.",
+      "spoken": "An inductor consists of a coil of conducting wire wound around a core of air, iron, or ferrite."
+    },
+    {
+      "type": "sentence",
+      "id": "s10_2",
+      "text": "When current flows through the coil, a magnetic field builds up around it.",
+      "spoken": "When current flows through the coil, a magnetic field builds up around it."
+    },
+    {
+      "type": "sentence",
+      "id": "s10_3",
+      "text": "By Faraday's Law and Lenz's Law, any change in current induces an opposing voltage: v = L × (di / dt).",
+      "spoken": "By Faraday's Law and Lenz's Law, any change in current induces an opposing voltage: v = L × (di / dt)."
+    },
+    {
+      "type": "sentence",
+      "id": "s10_4",
+      "text": "An inductor resists changes in current.",
+      "spoken": "An inductor resists changes in current."
+    },
+    {
+      "type": "sentence",
+      "id": "s10_5",
+      "text": "In a steady-state DC circuit where current is constant (di/dt = 0), an ideal inductor has zero voltage drop and acts as a Short Circuit.",
+      "spoken": "In a steady-state DC circuit where current is constant (di/dt = 0), an ideal inductor has zero voltage drop and acts as a Short Circuit."
+    },
+    {
+      "type": "callout",
+      "text": "<strong>Inductive Kick (Flyback Spike):</strong> Abruptly disconnecting an energized inductor creates a dangerous reverse voltage spike ($v = -L \\frac{di}{dt} \\gg V_{\\text{supply}}$) that destroys transistors. A reverse-biased <em>flyback diode</em> must be placed anti-parallel across the coil to clamp the spike to $V_{\\text{clamp}} \\approx V_{\\text{supply}} + 0.7\\text{V}$.",
+      "spoken": "Inductive Kick (Flyback Spike): Abruptly disconnecting an energized inductor creates a dangerous reverse voltage spike ( v = -L di over dt is much greater than V supply ) that destroys transistors. A reverse-biased flyback diode must be placed anti-parallel across the coil to clamp the spike to V clamp is approximately V supply + 0.7 V ."
     }
   ]
 }

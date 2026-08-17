@@ -1,7 +1,7 @@
 {
   "lessonId": "lesson-1-2",
   "voice": "en-US-ChristopherNeural",
-  "totalDuration": 32.55,
+  "totalDuration": 107.28,
   "sentences": [
     {
       "text": "Every circuit in existence is governed by the relationship between three quantities: Voltage, Current, and Resistance.",
@@ -27,6 +27,56 @@
       "text": "In 1827, German physicist Georg Ohm proved that current is directly proportional to voltage and inversely proportional to resistance.",
       "start": 23.52,
       "end": 32.55
+    },
+    {
+      "text": "The Hydraulic Analogy: Think of a garden hose.",
+      "start": 32.55,
+      "end": 36.32
+    },
+    {
+      "text": "Voltage is the water pressure from the faucet, Current is the volume flow rate ( i equals d q over d t ), and Resistance is squeezing the nozzle ( R = V/I ).",
+      "start": 36.33,
+      "end": 47.33
+    },
+    {
+      "text": "Whenever electric current flows through a resistance, electrical energy is converted into heat.",
+      "start": 47.33,
+      "end": 53.26
+    },
+    {
+      "text": "This power dissipation is measured in Watts (W).",
+      "start": 53.26,
+      "end": 57.25
+    },
+    {
+      "text": "Standard through-hole resistors are typically rated for 1/4 Watt (0.25W) or 1/2 Watt (0.5W).",
+      "start": 57.25,
+      "end": 67.79
+    },
+    {
+      "text": "If you push 10 Volts across a 100 Ohm resistor, the power dissipated is P = V squared / R = 100 / 100 = 1 Watt.",
+      "start": 67.79,
+      "end": 77.86
+    },
+    {
+      "text": "A standard quarter-watt resistor in that circuit will quickly overheat, smoke, and burn out.",
+      "start": 77.86,
+      "end": 83.89
+    },
+    {
+      "text": "Golden Rule of Hardware Design: Always de-rate resistors by at least 50%.",
+      "start": 83.89,
+      "end": 89.55
+    },
+    {
+      "text": "If P = V squared over R = frac (10 V ) squared 100 Ohms = 1.0 W , a standard 0.25 W resistor will burn out.",
+      "start": 89.55,
+      "end": 101.14
+    },
+    {
+      "text": "Always select a resistor with power rating is greater than or equal to 2 times P dissipated",
+      "start": 101.14,
+      "end": 107.28
     }
   ],
   "speechItems": [
@@ -59,6 +109,46 @@
       "id": "s2_5",
       "text": "In 1827, German physicist Georg Ohm proved that current is directly proportional to voltage and inversely proportional to resistance.",
       "spoken": "In 1827, German physicist Georg Ohm proved that current is directly proportional to voltage and inversely proportional to resistance."
+    },
+    {
+      "type": "callout",
+      "text": "<strong>The Hydraulic Analogy:</strong> Think of a garden hose. Voltage is the water pressure from the faucet, Current is the volume flow rate ($i = dq/dt$), and Resistance is squeezing the nozzle ($R = V/I$).",
+      "spoken": "The Hydraulic Analogy: Think of a garden hose. Voltage is the water pressure from the faucet, Current is the volume flow rate ( i equals d q over d t ), and Resistance is squeezing the nozzle ( R = V/I )."
+    },
+    {
+      "type": "sentence",
+      "id": "s2_6",
+      "text": "Whenever electric current flows through a resistance, electrical energy is converted into heat.",
+      "spoken": "Whenever electric current flows through a resistance, electrical energy is converted into heat."
+    },
+    {
+      "type": "sentence",
+      "id": "s2_7",
+      "text": "This power dissipation is measured in Watts (W).",
+      "spoken": "This power dissipation is measured in Watts (W)."
+    },
+    {
+      "type": "sentence",
+      "id": "s2_8",
+      "text": "Standard through-hole resistors are typically rated for 1/4 Watt (0.25W) or 1/2 Watt (0.5W).",
+      "spoken": "Standard through-hole resistors are typically rated for 1/4 Watt (0.25W) or 1/2 Watt (0.5W)."
+    },
+    {
+      "type": "sentence",
+      "id": "s2_9",
+      "text": "If you push 10 Volts across a 100 Ohm resistor, the power dissipated is P = V² / R = 100 / 100 = 1 Watt.",
+      "spoken": "If you push 10 Volts across a 100 Ohm resistor, the power dissipated is P = V squared / R = 100 / 100 = 1 Watt."
+    },
+    {
+      "type": "sentence",
+      "id": "s2_10",
+      "text": "A standard quarter-watt resistor in that circuit will quickly overheat, smoke, and burn out.",
+      "spoken": "A standard quarter-watt resistor in that circuit will quickly overheat, smoke, and burn out."
+    },
+    {
+      "type": "callout",
+      "text": "<strong>Golden Rule of Hardware Design:</strong> Always de-rate resistors by at least 50%. If $P = \\frac{V^2}{R} = \\frac{(10\\text{ V})^2}{100\\,\\Omega} = 1.0\\text{ W}$, a standard $0.25\\text{ W}$ resistor will burn out. Always select a resistor with power rating $\\ge 2\\times P_{\\text{dissipated}}$",
+      "spoken": "Golden Rule of Hardware Design: Always de-rate resistors by at least 50%. If P = V squared over R = frac (10 V ) squared 100 Ohms = 1.0 W , a standard 0.25 W resistor will burn out. Always select a resistor with power rating is greater than or equal to 2 times P dissipated"
     }
   ]
 }

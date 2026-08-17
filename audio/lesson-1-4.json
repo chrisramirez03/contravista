@@ -1,7 +1,7 @@
 {
   "lessonId": "lesson-1-4",
   "voice": "en-US-ChristopherNeural",
-  "totalDuration": 36.0,
+  "totalDuration": 70.49,
   "sentences": [
     {
       "text": "Before analyzing any circuit, an engineer must identify its topological elements.",
@@ -27,6 +27,86 @@
       "text": "A network with b branches, n nodes, and l independent loops satisfies the fundamental topology theorem: b = l + n - 1.",
       "start": 26.48,
       "end": 36.0
+    },
+    {
+      "text": "The Fundamental Network Theorem: b = l + n - 1 which means that l = b - n + 1 .",
+      "start": 36.0,
+      "end": 43.5
+    },
+    {
+      "text": "This theorem defines the exact number of independent KCL ( n - 1 ) and KVL ( l ) equations required to solve any network.",
+      "start": 43.5,
+      "end": 53.21
+    },
+    {
+      "text": "Voltage is always a relative measurement between two points.",
+      "start": 53.21,
+      "end": 57.34
+    },
+    {
+      "text": "To simplify circuit schematics, engineers define a common reference node called Ground, assigned a potential of 0 Volts.",
+      "start": 57.34,
+      "end": 65.29
+    },
+    {
+      "text": "All other node voltages are measured with respect to this 0V ground point.",
+      "start": 65.29,
+      "end": 70.49
+    }
+  ],
+  "speechItems": [
+    {
+      "type": "sentence",
+      "id": "s4_1",
+      "text": "Before analyzing any circuit, an engineer must identify its topological elements.",
+      "spoken": "Before analyzing any circuit, an engineer must identify its topological elements."
+    },
+    {
+      "type": "sentence",
+      "id": "s4_2",
+      "text": "A branch represents any single two-terminal component, such as a resistor or voltage source.",
+      "spoken": "A branch represents any single two-terminal component, such as a resistor or voltage source."
+    },
+    {
+      "type": "sentence",
+      "id": "s4_3",
+      "text": "A node is the point of connection between two or more branches.",
+      "spoken": "A node is the point of connection between two or more branches."
+    },
+    {
+      "type": "sentence",
+      "id": "s4_4",
+      "text": "A loop is any closed path in a circuit formed by starting at a node, passing through elements, and returning to the same node without passing through any node more than once.",
+      "spoken": "A loop is any closed path in a circuit formed by starting at a node, passing through elements, and returning to the same node without passing through any node more than once."
+    },
+    {
+      "type": "sentence",
+      "id": "s4_5",
+      "text": "A network with b branches, n nodes, and l independent loops satisfies the fundamental topology theorem: b = l + n - 1.",
+      "spoken": "A network with b branches, n nodes, and l independent loops satisfies the fundamental topology theorem: b = l + n - 1."
+    },
+    {
+      "type": "callout",
+      "text": "<strong>The Fundamental Network Theorem:</strong> $b = l + n - 1 \\implies l = b - n + 1$. This theorem defines the exact number of independent KCL ($n - 1$) and KVL ($l$) equations required to solve any network.",
+      "spoken": "The Fundamental Network Theorem: b = l + n - 1 which means that l = b - n + 1 . This theorem defines the exact number of independent KCL ( n - 1 ) and KVL ( l ) equations required to solve any network."
+    },
+    {
+      "type": "sentence",
+      "id": "s4_6",
+      "text": "Voltage is always a relative measurement between two points.",
+      "spoken": "Voltage is always a relative measurement between two points."
+    },
+    {
+      "type": "sentence",
+      "id": "s4_7",
+      "text": "To simplify circuit schematics, engineers define a common reference node called Ground, assigned a potential of 0 Volts.",
+      "spoken": "To simplify circuit schematics, engineers define a common reference node called Ground, assigned a potential of 0 Volts."
+    },
+    {
+      "type": "sentence",
+      "id": "s4_8",
+      "text": "All other node voltages are measured with respect to this 0V ground point.",
+      "spoken": "All other node voltages are measured with respect to this 0V ground point."
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "lessonId": "lesson-1-1",
   "voice": "en-US-ChristopherNeural",
-  "totalDuration": 102.85,
+  "totalDuration": 156.25,
   "sentences": [
     {
       "text": "Everything in the physical universe is composed of atoms.",
@@ -34,64 +34,84 @@
       "end": 34.9
     },
     {
-      "text": "Why does electricity flow easily through metal wiring, but get stopped cold by plastic or rubber?",
+      "text": "Core Law: In normal stable matter, positive protons and negative electrons balance out.",
       "start": 34.9,
-      "end": 41.21
+      "end": 41.27
+    },
+    {
+      "text": "Electricity occurs when valence electrons break free ( e = -1.6022 times 10 to the power of -19 C ) and drift under an electric field to create current: i(t) = dq(t) over dt [ Amperes, A ] Why does electricity flow easily through metal wiring, but get stopped cold by plastic or rubber?",
+      "start": 41.27,
+      "end": 64.53
     },
     {
       "text": "In conductive materials like copper, silver, and gold, the outermost electrons are held very loosely.",
-      "start": 41.21,
-      "end": 48.32
+      "start": 64.53,
+      "end": 71.64
     },
     {
       "text": "They can easily hop between neighboring atoms to form an electric current.",
-      "start": 48.33,
-      "end": 52.91
+      "start": 71.64,
+      "end": 76.23
     },
     {
       "text": "In insulators like rubber, glass, and plastic, electrons are locked tightly to their nuclei.",
-      "start": 52.91,
-      "end": 59.58
+      "start": 76.22,
+      "end": 82.89
     },
     {
       "text": "Even with high electrical force, they refuse to flow.",
-      "start": 59.58,
-      "end": 63.64
+      "start": 82.89,
+      "end": 86.95
     },
     {
       "text": "That is why electrical cables use copper wire on the inside to conduct power, surrounded by flexible rubber on the outside to keep you safe.",
-      "start": 63.64,
-      "end": 72.16
+      "start": 86.95,
+      "end": 95.48
+    },
+    {
+      "text": "Real-World Design: Electrical cables use low-resistivity copper on the inside to conduct current i = dq over dt , surrounded by high-breakdown insulating rubber on the outside for safety.",
+      "start": 95.47,
+      "end": 107.47
     },
     {
       "text": "Electrons will not flow through a wire on their own.",
-      "start": 72.16,
-      "end": 75.88
+      "start": 107.47,
+      "end": 111.19
     },
     {
       "text": "They need a force pushing them.",
-      "start": 75.88,
-      "end": 78.29
+      "start": 111.19,
+      "end": 113.6
     },
     {
       "text": "Think of water in a pipe: without water pressure from a pump or elevated water tower, the water just sits still.",
-      "start": 78.29,
-      "end": 85.54
+      "start": 113.6,
+      "end": 120.85
     },
     {
       "text": "Voltage, measured in Volts, is that electrical pressure provided by a battery or power supply.",
-      "start": 85.54,
-      "end": 91.96
+      "start": 120.85,
+      "end": 127.27
     },
     {
       "text": "The higher the voltage, the stronger the push, and the more current flows through the circuit.",
-      "start": 91.96,
-      "end": 97.44
+      "start": 127.28,
+      "end": 132.75
     },
     {
       "text": "Remember the golden rule: Voltage is the cause, and Current is the effect.",
-      "start": 97.44,
-      "end": 102.85
+      "start": 132.75,
+      "end": 138.16
+    },
+    {
+      "text": "The Cause-and-Effect Rule: Voltage is the cause (energy per unit charge v = dw over dq in Volts, V = J/C ), and Current is the effect (moving charges i = dq over dt in Amperes).",
+      "start": 138.16,
+      "end": 152.74
+    },
+    {
+      "text": "Without voltage, net current cannot flow.",
+      "start": 152.74,
+      "end": 156.25
     }
   ],
   "speechItems": [
@@ -132,6 +152,11 @@
       "spoken": "Electricity occurs when electrons break free from their orbits and move."
     },
     {
+      "type": "callout",
+      "text": "<strong>Core Law:</strong> In normal stable matter, positive protons and negative electrons balance out. Electricity occurs when valence electrons break free ($e = -1.6022 \\times 10^{-19}\\text{ C}$) and drift under an electric field to create current: $i(t) = \\frac{dq(t)}{dt} \\quad [\\text{Amperes, A}]$",
+      "spoken": "Core Law: In normal stable matter, positive protons and negative electrons balance out. Electricity occurs when valence electrons break free ( e = -1.6022 times 10 to the power of -19 C ) and drift under an electric field to create current: i(t) = dq(t) over dt [ Amperes, A ]"
+    },
+    {
       "type": "sentence",
       "id": "s7",
       "text": "Why does electricity flow easily through metal wiring, but get stopped cold by plastic or rubber?",
@@ -168,6 +193,11 @@
       "spoken": "That is why electrical cables use copper wire on the inside to conduct power, surrounded by flexible rubber on the outside to keep you safe."
     },
     {
+      "type": "callout",
+      "text": "<strong>Real-World Design:</strong> Electrical cables use low-resistivity copper on the inside to conduct current $i = \\frac{dq}{dt}$, surrounded by high-breakdown insulating rubber on the outside for safety.",
+      "spoken": "Real-World Design: Electrical cables use low-resistivity copper on the inside to conduct current i = dq over dt , surrounded by high-breakdown insulating rubber on the outside for safety."
+    },
+    {
       "type": "sentence",
       "id": "s13",
       "text": "Electrons will not flow through a wire on their own.",
@@ -202,6 +232,11 @@
       "id": "s18",
       "text": "Remember the golden rule: Voltage is the cause, and Current is the effect.",
       "spoken": "Remember the golden rule: Voltage is the cause, and Current is the effect."
+    },
+    {
+      "type": "callout",
+      "text": "<strong>The Cause-and-Effect Rule:</strong> Voltage is the <em>cause</em> (energy per unit charge $v = \\frac{dw}{dq}$ in Volts, $\\text{V} = \\text{J/C}$), and Current is the <em>effect</em> (moving charges $i = \\frac{dq}{dt}$ in Amperes). Without voltage, net current cannot flow.",
+      "spoken": "The Cause-and-Effect Rule: Voltage is the cause (energy per unit charge v = dw over dq in Volts, V = J/C ), and Current is the effect (moving charges i = dq over dt in Amperes). Without voltage, net current cannot flow."
     }
   ]
 }

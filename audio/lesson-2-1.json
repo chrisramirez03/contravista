@@ -1,7 +1,7 @@
 {
   "lessonId": "lesson-2-1",
   "voice": "en-US-ChristopherNeural",
-  "totalDuration": 35.3,
+  "totalDuration": 58.26,
   "sentences": [
     {
       "text": "A capacitor consists of two conducting plates separated by an insulating dielectric material.",
@@ -27,6 +27,16 @@
       "text": "In a steady-state DC circuit where voltage is constant (dv/dt = 0), a capacitor acts as an open circuit (i = 0).",
       "start": 25.48,
       "end": 35.3
+    },
+    {
+      "text": "Energy Stored in a Capacitor: w(t) = 1 over 2 C v squared(t) [ Joules, J ] .",
+      "start": 35.3,
+      "end": 43.86
+    },
+    {
+      "text": "The voltage across a capacitor cannot change instantaneously ( v(0^+) = v(0^-) ), because an abrupt jump requires infinite current: i = C dv over dt approaches infinity",
+      "start": 43.86,
+      "end": 58.26
     }
   ],
   "speechItems": [
@@ -59,6 +69,11 @@
       "id": "s9_5",
       "text": "In a steady-state DC circuit where voltage is constant (dv/dt = 0), a capacitor acts as an open circuit (i = 0).",
       "spoken": "In a steady-state DC circuit where voltage is constant (dv/dt = 0), a capacitor acts as an open circuit (i = 0)."
+    },
+    {
+      "type": "callout",
+      "text": "<strong>Energy Stored in a Capacitor:</strong> $w(t) = \\frac{1}{2} C v^2(t) \\quad [\\text{Joules, J}]$. The voltage across a capacitor cannot change instantaneously ($v(0^+) = v(0^-)$), because an abrupt jump requires infinite current: $i = C \\frac{dv}{dt} \\to \\infty$",
+      "spoken": "Energy Stored in a Capacitor: w(t) = 1 over 2 C v squared(t) [ Joules, J ] . The voltage across a capacitor cannot change instantaneously ( v(0^+) = v(0^-) ), because an abrupt jump requires infinite current: i = C dv over dt approaches infinity"
     }
   ]
 }

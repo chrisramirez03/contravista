@@ -1,7 +1,7 @@
 {
   "lessonId": "lesson-1-6",
   "voice": "en-US-ChristopherNeural",
-  "totalDuration": 30.47,
+  "totalDuration": 43.62,
   "sentences": [
     {
       "text": "Mesh analysis is another powerful systematic method, but it is based on Kirchhoff's Voltage Law around planar meshes.",
@@ -19,9 +19,50 @@
       "end": 22.21
     },
     {
-      "text": "The actual current through a shared branch is simply the difference between adjacent mesh currents: i_branch = i1 - i2.",
+      "text": "The actual current through a shared branch is simply the difference between adjacent mesh currents: ibranch = i1 - i2.",
       "start": 22.21,
-      "end": 30.47
+      "end": 30.04
+    },
+    {
+      "text": "Mesh Analysis Constraint: Mesh analysis only applies to planar circuits (circuits that can be drawn on a flat plane without crossing wires).",
+      "start": 30.04,
+      "end": 39.19
+    },
+    {
+      "text": "For non-planar circuits, nodal analysis must be used.",
+      "start": 39.19,
+      "end": 43.62
+    }
+  ],
+  "speechItems": [
+    {
+      "type": "sentence",
+      "id": "s6_1",
+      "text": "Mesh analysis is another powerful systematic method, but it is based on Kirchhoff's Voltage Law around planar meshes.",
+      "spoken": "Mesh analysis is another powerful systematic method, but it is based on Kirchhoff's Voltage Law around planar meshes."
+    },
+    {
+      "type": "sentence",
+      "id": "s6_2",
+      "text": "A mesh is a loop that does not contain any other loops within it — like the individual panes of a window frame.",
+      "spoken": "A mesh is a loop that does not contain any other loops within it — like the individual panes of a window frame."
+    },
+    {
+      "type": "sentence",
+      "id": "s6_3",
+      "text": "Instead of tracking branch currents, we assign fictitious circulating mesh currents i1, i2, and i3 to each mesh.",
+      "spoken": "Instead of tracking branch currents, we assign fictitious circulating mesh currents i1, i2, and i3 to each mesh."
+    },
+    {
+      "type": "sentence",
+      "id": "s6_4",
+      "text": "The actual current through a shared branch is simply the difference between adjacent mesh currents: ibranch = i1 - i2.",
+      "spoken": "The actual current through a shared branch is simply the difference between adjacent mesh currents: ibranch = i1 - i2."
+    },
+    {
+      "type": "callout",
+      "text": "<strong>Mesh Analysis Constraint:</strong> Mesh analysis only applies to <em>planar circuits</em> (circuits that can be drawn on a flat plane without crossing wires). For non-planar circuits, nodal analysis must be used.",
+      "spoken": "Mesh Analysis Constraint: Mesh analysis only applies to planar circuits (circuits that can be drawn on a flat plane without crossing wires). For non-planar circuits, nodal analysis must be used."
     }
   ]
 }
