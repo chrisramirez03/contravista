@@ -1255,6 +1255,23 @@ function renderStepContent(container, step) {
       if (sec.callout) {
         var callout = document.createElement("div");
         callout.className = "pedagogical-callout";
+        if (typeof sec.callout.start !== "undefined") {
+          callout.classList.add("sentence-node");
+          callout.setAttribute("data-start", sec.callout.start);
+          if (typeof sec.callout.end !== "undefined") {
+            callout.setAttribute("data-end", sec.callout.end);
+          }
+          callout.title = "Click to listen to this note (" + sec.callout.start + "s)";
+          callout.addEventListener("click", function() {
+            SoundEngine.playClick();
+            if (AppState.activeAudio) {
+              AppState.activeAudio.currentTime = sec.callout.start;
+              if (!AppState.activeAudioPlaying) {
+                AppState.activeAudio.play();
+              }
+            }
+          });
+        }
         var calloutIcon = ICONS[sec.callout.icon] || ICONS.bulb;
         callout.innerHTML = '<span class="callout-icon-wrapper">' + calloutIcon + '</span><div>' + sec.callout.text + '</div>';
         secWrapper.appendChild(callout);

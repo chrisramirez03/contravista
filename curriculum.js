@@ -210,11 +210,11 @@ var COURSES_CATALOG = [
                   {
                     title: "1. The Triad: Voltage, Current, and Resistance",
                     sentences: [
-                      { id: "s2_1", text: "Every circuit in existence is governed by the relationship between three quantities: Voltage, Current, and Resistance.", start: 0.1, end: 7.2 },
-                      { id: "s2_2", text: "Voltage (V) is the push, measured in Volts.", start: 7.2, end: 11.5 },
-                      { id: "s2_3", text: "Current (I) is the flow rate of charge, measured in Amperes or Amps.", start: 11.5, end: 17.2 },
-                      { id: "s2_4", text: "Resistance (R) is the opposition to that flow, measured in Ohms (Ω).", start: 17.2, end: 23.4 },
-                      { id: "s2_5", text: "In 1827, German physicist Georg Ohm proved that current is directly proportional to voltage and inversely proportional to resistance.", start: 23.4, end: 33.1 }
+                      { id: "s2_1", text: "Every circuit in existence is governed by the relationship between three quantities: Voltage, Current, and Resistance.", start: 0.1, end: 7.74 },
+                      { id: "s2_2", text: "Voltage (V) is the push, measured in Volts.", start: 7.69, end: 12.06 },
+                      { id: "s2_3", text: "Current (I) is the flow rate of charge, measured in Amperes or Amps.", start: 12.06, end: 17.56 },
+                      { id: "s2_4", text: "Resistance (R) is the opposition to that flow, measured in Ohms (Ω).", start: 17.56, end: 23.52 },
+                      { id: "s2_5", text: "In 1827, German physicist Georg Ohm proved that current is directly proportional to voltage and inversely proportional to resistance.", start: 23.52, end: 32.55 }
                     ],
                     comparison: {
                       left: {
@@ -242,17 +242,19 @@ var COURSES_CATALOG = [
                     },
                     callout: {
                       icon: "bulb",
+                      start: 32.55,
+                      end: 45.8,
                       text: "<strong>The Hydraulic Analogy:</strong> Think of a garden hose. Voltage is the water pressure from the faucet, Current is the volume flow rate ($i = dq/dt$), and Resistance is squeezing the nozzle ($R = V/I$)."
                     }
                   },
                   {
                     title: "2. Power, Heat Dissipation, and Component Ratings",
                     sentences: [
-                      { id: "s2_6", text: "Whenever electric current flows through a resistance, electrical energy is converted into heat.", start: 33.5, end: 41.2 },
-                      { id: "s2_7", text: "This power dissipation is measured in Watts (W).", start: 41.2, end: 45.8 },
-                      { id: "s2_8", text: "Standard through-hole resistors are typically rated for 1/4 Watt (0.25W) or 1/2 Watt (0.5W).", start: 45.8, end: 54.6 },
-                      { id: "s2_9", text: "If you push 10 Volts across a 100 Ohm resistor, the power dissipated is P = V² / R = 100 / 100 = 1 Watt.", start: 54.6, end: 65.4 },
-                      { id: "s2_10", text: "A standard quarter-watt resistor in that circuit will quickly overheat, smoke, and burn out.", start: 65.4, end: 73.8 }
+                      { id: "s2_6", text: "Whenever electric current flows through a resistance, electrical energy is converted into heat.", start: 45.8, end: 51.74 },
+                      { id: "s2_7", text: "This power dissipation is measured in Watts (W).", start: 51.74, end: 55.73 },
+                      { id: "s2_8", text: "Standard through-hole resistors are typically rated for 1/4 Watt (0.25W) or 1/2 Watt (0.5W).", start: 55.73, end: 66.26 },
+                      { id: "s2_9", text: "If you push 10 Volts across a 100 Ohm resistor, the power dissipated is P = V² / R = 100 / 100 = 1 Watt.", start: 66.26, end: 76.81 },
+                      { id: "s2_10", text: "A standard quarter-watt resistor in that circuit will quickly overheat, smoke, and burn out.", start: 76.81, end: 82.84 }
                     ],
                     callout: {
                       icon: "zap",
