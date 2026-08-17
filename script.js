@@ -186,6 +186,7 @@ var AppState = {
   speechRate: parseFloat(localStorage.getItem("electronflow-speech-rate")) || 1.0,
   activeAudio: null,
   activeAudioPlaying: false,
+  audioAnimFrameId: null,
   expandedLessons: { "lesson-1-1": true },
   /* Estado unificado para todos los simuladores de circuitos */
   circuitState: {
@@ -309,6 +310,10 @@ function getActiveSteps() {
 }
 
 function stopCurrentAudio() {
+  if (AppState.audioAnimFrameId) {
+    cancelAnimationFrame(AppState.audioAnimFrameId);
+    AppState.audioAnimFrameId = null;
+  }
   if (AppState.activeAudio) {
     AppState.activeAudio.pause();
     AppState.activeAudio = null;
@@ -847,52 +852,50 @@ function createAudioPlayerBar(step) {
     var audio = new Audio(step.audioSrc);
     audio.playbackRate = AppState.speechRate;
 
-    /* Carga dinámica de marcas de tiempo desde el JSON si existe */
-    var jsonSrc = step.audioSrc.replace(/\.mp3$/, ".json");
-    if (typeof fetch !== "undefined") {
-      fetch(jsonSrc).then(function(res) {
-        if (res.ok) return res.json();
-        return null;
-      }).then(function(data) {
-        if (data && data.sentences && data.sentences.length > 0) {
-          var sentenceSpans = document.querySelectorAll(".sentence-node");
-          data.sentences.forEach(function(cue, idx) {
-            if (idx < sentenceSpans.length) {
-              sentenceSpans[idx].dataset.start = cue.start;
-              sentenceSpans[idx].dataset.end = cue.end;
-              sentenceSpans[idx].title = "Click to listen from here (" + cue.start + "s)";
-            }
-          });
-          if (data.totalDuration && timePill) {
-            timePill.textContent = "0:00 / " + formatTime(data.totalDuration);
-          }
-        }
-      }).catch(function(e) {
-        /* Silently ignore if running in local file protocol */
-      });
-    }
-
-    audio.addEventListener("timeupdate", function() {
-      if (!audio.duration) return;
-      if (timePill) {
-        timePill.textContent = formatTime(audio.currentTime) + " / " + formatTime(audio.duration);
-      }
+    /* Sincronización de alta precisión a 60 FPS mediante requestAnimationFrame */
+    function updateAudioHighlight() {
+      if (!AppState.activeAudioPlaying || !audio) return;
 
       var curr = audio.currentTime;
+      if (timePill && audio.duration) {
+        timePill.textContent = formatTime(curr) + " / " + formatTime(audio.duration);
+      }
+
       var sentenceSpans = document.querySelectorAll(".sentence-node");
-      sentenceSpans.forEach(function(span) {
+      var activeSpan = null;
+
+      for (var i = 0; i < sentenceSpans.length; i++) {
+        var span = sentenceSpans[i];
         var start = parseFloat(span.getAttribute("data-start"));
         var end = parseFloat(span.getAttribute("data-end"));
-        if (!isNaN(start) && !isNaN(end) && curr >= start && curr <= end) {
-          if (!span.classList.contains("active-sentence")) {
-            sentenceSpans.forEach(function(s) { s.classList.remove("active-sentence"); });
-            span.classList.add("active-sentence");
+        var nextStart = (i + 1 < sentenceSpans.length) ? parseFloat(sentenceSpans[i + 1].getAttribute("data-start")) : (end + 3.0);
+
+        if (!isNaN(start) && curr >= (start - 0.05)) {
+          if (curr < (nextStart - 0.02) || (!isNaN(end) && curr <= end + 0.25)) {
+            activeSpan = span;
+            break;
           }
         }
+      }
+
+      sentenceSpans.forEach(function(s) {
+        if (s === activeSpan) {
+          if (!s.classList.contains("active-sentence")) {
+            s.classList.add("active-sentence");
+          }
+        } else {
+          s.classList.remove("active-sentence");
+        }
       });
-    });
+
+      AppState.audioAnimFrameId = requestAnimationFrame(updateAudioHighlight);
+    }
 
     audio.addEventListener("ended", function() {
+      if (AppState.audioAnimFrameId) {
+        cancelAnimationFrame(AppState.audioAnimFrameId);
+        AppState.audioAnimFrameId = null;
+      }
       AppState.activeAudioPlaying = false;
       playBtn.classList.remove("playing");
       playBtn.innerHTML = '<svg class="svg-icon" viewBox="0 0 24 24"><polygon points="6,4 20,12 6,20" fill="currentColor"/></svg>';
@@ -901,9 +904,20 @@ function createAudioPlayerBar(step) {
       sentenceSpans.forEach(function(s) { s.classList.remove("active-sentence"); });
     });
 
+    audio.addEventListener("pause", function() {
+      if (AppState.audioAnimFrameId) {
+        cancelAnimationFrame(AppState.audioAnimFrameId);
+        AppState.audioAnimFrameId = null;
+      }
+    });
+
     playBtn.addEventListener("click", function() {
       if (AppState.activeAudioPlaying) {
         audio.pause();
+        if (AppState.audioAnimFrameId) {
+          cancelAnimationFrame(AppState.audioAnimFrameId);
+          AppState.audioAnimFrameId = null;
+        }
         AppState.activeAudioPlaying = false;
         playBtn.classList.remove("playing");
         playBtn.innerHTML = '<svg class="svg-icon" viewBox="0 0 24 24"><polygon points="6,4 20,12 6,20" fill="currentColor"/></svg>';
@@ -917,6 +931,8 @@ function createAudioPlayerBar(step) {
           playBtn.classList.add("playing");
           playBtn.innerHTML = '<svg class="svg-icon" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16" fill="currentColor"/><rect x="14" y="4" width="4" height="16" fill="currentColor"/></svg>';
           if (waveform) waveform.classList.add("active");
+          if (AppState.audioAnimFrameId) cancelAnimationFrame(AppState.audioAnimFrameId);
+          AppState.audioAnimFrameId = requestAnimationFrame(updateAudioHighlight);
         }).catch(function(err) {
           fallbackSpeech(step, playBtn, waveform);
         });
