@@ -1,0 +1,37 @@
+{
+  "lessonId": "lesson-4-6",
+  "voice": "en-US-ChristopherNeural",
+  "totalDuration": 46.12,
+  "sentences": [
+    {
+      "text": "Transistors are the building blocks of all modern electronics, serving two main functions: switching and amplification.",
+      "start": 0.1,
+      "end": 7.79
+    },
+    {
+      "text": "Bipolar Junction Transistors (BJTs) are current-controlled devices.",
+      "start": 7.74,
+      "end": 13.5
+    },
+    {
+      "text": "A small base current I_b controls a large collector current I_c according to the current gain: I_c = beta × I_b.",
+      "start": 13.5,
+      "end": 23.59
+    },
+    {
+      "text": "MOSFETs are voltage-controlled devices.",
+      "start": 23.59,
+      "end": 26.79
+    },
+    {
+      "text": "A voltage applied between Gate and Source (V_GS) opens a conductive channel between Drain and Source, with virtually zero gate current.",
+      "start": 26.79,
+      "end": 36.6
+    },
+    {
+      "text": "Because MOSFETs require no continuous gate current and have ultra-low on-resistance R_DS(on), they dominate modern high-power switching.",
+      "start": 36.6,
+      "end": 46.12
+    }
+  ]
+}

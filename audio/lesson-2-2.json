@@ -1,0 +1,32 @@
+{
+  "lessonId": "lesson-2-2",
+  "voice": "en-US-ChristopherNeural",
+  "totalDuration": 34.0,
+  "sentences": [
+    {
+      "text": "An inductor consists of a coil of conducting wire wound around a core of air, iron, or ferrite.",
+      "start": 0.1,
+      "end": 6.67
+    },
+    {
+      "text": "When current flows through the coil, a magnetic field builds up around it.",
+      "start": 6.62,
+      "end": 11.57
+    },
+    {
+      "text": "By Faraday's Law and Lenz's Law, any change in current induces an opposing voltage: v = L × (di / dt).",
+      "start": 11.57,
+      "end": 20.67
+    },
+    {
+      "text": "An inductor resists changes in current.",
+      "start": 20.68,
+      "end": 23.88
+    },
+    {
+      "text": "In a steady-state DC circuit where current is constant (di/dt = 0), an ideal inductor has zero voltage drop and acts as a Short Circuit.",
+      "start": 23.88,
+      "end": 34.0
+    }
+  ]
+}

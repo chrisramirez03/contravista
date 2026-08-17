@@ -1,0 +1,10 @@
+# Ignore giant textbook PDFs (GitHub blocks files > 100MB)
+Electric books/
+*.pdf
+*.crdownload
+
+# Ignore unrelated projects and internal agent workspaces
+agentic-awesome-skills/
+.agents/
+.DS_Store
+*.log

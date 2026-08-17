@@ -1,0 +1,147 @@
+{
+  "lessonId": "lesson-1-1",
+  "voice": "en-US-ChristopherNeural",
+  "totalDuration": 145.24,
+  "sentences": [
+    {
+      "text": "The Foundations of Electricity.",
+      "start": 0.1,
+      "end": 2.77
+    },
+    {
+      "text": "Welcome to ElectronFlow.",
+      "start": 2.73,
+      "end": 5.19
+    },
+    {
+      "text": "Today we explore how subatomic particles, atomic bonds, and electrical pressure create the flow of electricity.",
+      "start": 5.19,
+      "end": 12.79
+    },
+    {
+      "text": "Section 1: The Atomic Blueprint.",
+      "start": 12.79,
+      "end": 15.96
+    },
+    {
+      "text": "Everything in the physical universe is composed of atoms.",
+      "start": 15.96,
+      "end": 19.8
+    },
+    {
+      "text": "Your phone screen, your body, and copper wiring are all built from billions of these microscopic building blocks.",
+      "start": 19.8,
+      "end": 27.12
+    },
+    {
+      "text": "Every atom contains a dense central nucleus packed with positively charged protons and neutral neutrons.",
+      "start": 27.12,
+      "end": 33.86
+    },
+    {
+      "text": "Orbiting around this nucleus at high speeds are tiny, negatively charged particles called electrons.",
+      "start": 33.86,
+      "end": 40.4
+    },
+    {
+      "text": "In normal stable matter, positive protons and negative electrons balance out.",
+      "start": 40.4,
+      "end": 45.94
+    },
+    {
+      "text": "Electricity occurs when electrons break free from their orbits and move.",
+      "start": 45.94,
+      "end": 50.81
+    },
+    {
+      "text": "Section 2: Conductors versus Insulators.",
+      "start": 50.81,
+      "end": 54.75
+    },
+    {
+      "text": "Why does electricity flow easily through metal wiring, but get stopped cold by plastic or rubber?",
+      "start": 54.75,
+      "end": 61.06
+    },
+    {
+      "text": "In conductive materials like copper, silver, and gold, the outermost electrons are held very loosely.",
+      "start": 61.06,
+      "end": 68.17
+    },
+    {
+      "text": "They can easily hop between neighboring atoms to form an electric current.",
+      "start": 68.17,
+      "end": 72.76
+    },
+    {
+      "text": "In insulators like rubber, glass, and plastic, electrons are locked tightly to their nuclei.",
+      "start": 72.76,
+      "end": 79.42
+    },
+    {
+      "text": "Even with high electrical force, they refuse to flow.",
+      "start": 79.42,
+      "end": 83.49
+    },
+    {
+      "text": "That is why electrical cables use copper wire on the inside to conduct power, surrounded by flexible rubber on the outside to keep you safe.",
+      "start": 83.49,
+      "end": 92.01
+    },
+    {
+      "text": "Section 3: Voltage: The Electrical Pressure.",
+      "start": 92.01,
+      "end": 96.06
+    },
+    {
+      "text": "Electrons will not flow through a wire on their own.",
+      "start": 96.06,
+      "end": 99.78
+    },
+    {
+      "text": "They need a force pushing them.",
+      "start": 99.78,
+      "end": 102.19
+    },
+    {
+      "text": "Think of water in a pipe: without water pressure from a pump or elevated water tower, the water just sits still.",
+      "start": 102.19,
+      "end": 109.44
+    },
+    {
+      "text": "Voltage, measured in Volts, is that electrical pressure provided by a battery or power supply.",
+      "start": 109.44,
+      "end": 115.86
+    },
+    {
+      "text": "The higher the voltage, the stronger the push, and the more current flows through the circuit.",
+      "start": 115.86,
+      "end": 121.34
+    },
+    {
+      "text": "Remember the golden rule: Voltage is the cause, and Current is the effect.",
+      "start": 121.34,
+      "end": 126.75
+    },
+    {
+      "text": "Key Takeaways.",
+      "start": 126.75,
+      "end": 128.76
+    },
+    {
+      "text": "To summarize: Electricity is the movement of charge carriers through a conductor.",
+      "start": 128.76,
+      "end": 134.12
+    },
+    {
+      "text": "Conductors have free valence electrons, while insulators lock their electrons tightly.",
+      "start": 134.12,
+      "end": 139.8
+    },
+    {
+      "text": "And Voltage provides the electrical pressure required to drive current through a closed circuit.",
+      "start": 139.8,
+      "end": 145.24
+    }
+  ]
+}

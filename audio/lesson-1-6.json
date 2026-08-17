@@ -1,0 +1,27 @@
+{
+  "lessonId": "lesson-1-6",
+  "voice": "en-US-ChristopherNeural",
+  "totalDuration": 30.47,
+  "sentences": [
+    {
+      "text": "Mesh analysis is another powerful systematic method, but it is based on Kirchhoff's Voltage Law around planar meshes.",
+      "start": 0.1,
+      "end": 7.51
+    },
+    {
+      "text": "A mesh is a loop that does not contain any other loops within it — like the individual panes of a window frame.",
+      "start": 7.46,
+      "end": 14.01
+    },
+    {
+      "text": "Instead of tracking branch currents, we assign fictitious circulating mesh currents i1, i2, and i3 to each mesh.",
+      "start": 14.01,
+      "end": 22.21
+    },
+    {
+      "text": "The actual current through a shared branch is simply the difference between adjacent mesh currents: i_branch = i1 - i2.",
+      "start": 22.21,
+      "end": 30.47
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "lessonId": "lesson-1-8",
+  "voice": "en-US-ChristopherNeural",
+  "totalDuration": 67.86,
+  "sentences": [
+    {
+      "text": "In 1883, French engineer Léon Charles Thévenin proved that any linear two-terminal circuit of resistors and sources can be replaced by an equivalent circuit consisting of a single voltage source V_Th in series with a resistor R_Th.",
+      "start": 0.1,
+      "end": 15.53
+    },
+    {
+      "text": "Similarly, Norton's theorem proves the same network can be replaced by an equivalent current source I_N in parallel with a resistor R_N.",
+      "start": 15.47,
+      "end": 24.84
+    },
+    {
+      "text": "V_Th is the open-circuit voltage across terminals a-b. I_N is the short-circuit current flowing when a-b are connected.",
+      "start": 24.84,
+      "end": 33.72
+    },
+    {
+      "text": "The equivalent resistance is R_Th = V_oc / I_sc.",
+      "start": 33.73,
+      "end": 40.25
+    },
+    {
+      "text": "When connecting a load resistor R_L to a practical power source with internal resistance R_Th, how do you maximize the power delivered to the load?",
+      "start": 40.25,
+      "end": 50.16
+    },
+    {
+      "text": "Maximum power transfer occurs when the load resistance exactly equals the Thevenin resistance: R_L = R_Th.",
+      "start": 50.16,
+      "end": 59.23
+    },
+    {
+      "text": "The maximum power delivered is: P_max = V_Th² / (4 R_Th).",
+      "start": 59.23,
+      "end": 67.86
+    }
+  ]
+}

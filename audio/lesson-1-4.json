@@ -1,0 +1,32 @@
+{
+  "lessonId": "lesson-1-4",
+  "voice": "en-US-ChristopherNeural",
+  "totalDuration": 36.0,
+  "sentences": [
+    {
+      "text": "Before analyzing any circuit, an engineer must identify its topological elements.",
+      "start": 0.1,
+      "end": 6.11
+    },
+    {
+      "text": "A branch represents any single two-terminal component, such as a resistor or voltage source.",
+      "start": 6.06,
+      "end": 12.16
+    },
+    {
+      "text": "A node is the point of connection between two or more branches.",
+      "start": 12.16,
+      "end": 16.48
+    },
+    {
+      "text": "A loop is any closed path in a circuit formed by starting at a node, passing through elements, and returning to the same node without passing through any node more than once.",
+      "start": 16.48,
+      "end": 26.48
+    },
+    {
+      "text": "A network with b branches, n nodes, and l independent loops satisfies the fundamental topology theorem: b = l + n - 1.",
+      "start": 26.48,
+      "end": 36.0
+    }
+  ]
+}

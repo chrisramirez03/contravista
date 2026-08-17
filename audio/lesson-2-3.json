@@ -1,0 +1,32 @@
+{
+  "lessonId": "lesson-2-3",
+  "voice": "en-US-ChristopherNeural",
+  "totalDuration": 43.69,
+  "sentences": [
+    {
+      "text": "When a DC voltage source is connected to a series resistor and capacitor, the capacitor does not charge instantly.",
+      "start": 0.1,
+      "end": 7.42
+    },
+    {
+      "text": "Instead, the voltage rises exponentially according to the differential equation solution: v(t) = V_s × (1 - e^(-t / τ)).",
+      "start": 7.38,
+      "end": 19.04
+    },
+    {
+      "text": "The parameter tau (τ = R × C) is the circuit Time Constant, measured in seconds.",
+      "start": 19.04,
+      "end": 26.03
+    },
+    {
+      "text": "After one time constant (t = 1τ), the capacitor charges to 63.2% of its final voltage.",
+      "start": 26.02,
+      "end": 34.3
+    },
+    {
+      "text": "After five time constants (t = 5τ), the capacitor is over 99.3% charged, considered fully steady state.",
+      "start": 34.3,
+      "end": 43.69
+    }
+  ]
+}

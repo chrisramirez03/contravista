@@ -1,0 +1,42 @@
+{
+  "lessonId": "lesson-1-3",
+  "voice": "en-US-ChristopherNeural",
+  "totalDuration": 58.17,
+  "sentences": [
+    {
+      "text": "In 1845, Gustav Kirchhoff formulated two laws that allow us to solve any electrical circuit, no matter how complex.",
+      "start": 0.1,
+      "end": 8.71
+    },
+    {
+      "text": "Kirchhoff's Current Law states that the sum of all currents entering a junction node must equal the sum of currents leaving it.",
+      "start": 8.66,
+      "end": 15.64
+    },
+    {
+      "text": "Charge cannot build up or vanish at a point: Σ I_in = Σ I_out.",
+      "start": 15.64,
+      "end": 22.45
+    },
+    {
+      "text": "Kirchhoff's Voltage Law states that the algebraic sum of all voltages around any closed loop must equal zero: Σ V_loop = 0.",
+      "start": 22.45,
+      "end": 31.79
+    },
+    {
+      "text": "When two resistors are connected in series across a voltage source, the voltage divides between them proportionally to their resistance.",
+      "start": 31.79,
+      "end": 39.95
+    },
+    {
+      "text": "The output voltage across R2 is: V_out = V_in × (R2 / (R1 + R2)).",
+      "start": 39.95,
+      "end": 48.74
+    },
+    {
+      "text": "Voltage dividers are widely used to create reference voltages, bias transistors, and read analog sensors like potentiometers and thermistors.",
+      "start": 48.74,
+      "end": 58.17
+    }
+  ]
+}

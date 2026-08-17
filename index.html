@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ContraVista — Learn Electronics</title>
+  <!-- Tipografías: Plus Jakarta Sans (Cuerpo) y Fraunces / Cinzel (Marca Mid-Century) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,400&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- KaTeX para renderizado perfecto de fórmulas matemáticas en 2D -->
+  <link rel="stylesheet" href="vendor/katex/katex.min.css">
+</head>
+<body>
+
+  <!-- ======= Barra superior limpia y moderna ======= -->
+  <header class="app-header">
+    <div class="header-left">
+      <!-- Botón de logo para ir al inicio / catálogo -->
+      <button class="logo-btn" id="btn-logo-home" title="Go to Course Home">
+        <span class="logo-text">ContraVista</span>
+      </button>
+      <span class="header-breadcrumb" id="header-breadcrumb">
+        Dashboard
+      </span>
+    </div>
+
+    <!-- Acciones globales en el header -->
+    <div class="header-right">
+      <!-- Botón de Guía Rápida / Fórmulas -->
+      <button class="header-action-btn" id="btn-open-cheatsheet" title="Quick Formula Reference">
+        <span class="header-btn-icon">
+          <svg class="svg-icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><line x1="9" y1="9" x2="15" y2="9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="9" y1="13" x2="15" y2="13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="9" y1="17" x2="13" y2="17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </span>
+        <span class="header-btn-label">Formulas</span>
+      </button>
+
+      <!-- Botón de sonido -->
+      <button class="header-action-btn" id="btn-sound-toggle" title="Toggle Sound FX">
+        <span class="header-btn-icon" id="sound-icon-wrapper">
+          <svg class="svg-icon" viewBox="0 0 24 24"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" fill="currentColor"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </span>
+        <span class="header-btn-label" id="sound-text">Sound ON</span>
+      </button>
+
+      <!-- Contador de Racha -->
+      <div class="stat-pill stat-streak" id="header-streak" title="Daily Learning Streak">
+        <span class="stat-icon">🔥</span>
+        <span class="stat-value" id="streak-count">1</span>
+        <span class="stat-label">Day</span>
+      </div>
+
+      <!-- Medidor de XP acumulado -->
+      <div class="stat-pill stat-xp" id="header-xp" title="Experience Points">
+        <span class="stat-icon">⚡</span>
+        <span class="stat-value" id="user-xp">0</span>
+        <span class="stat-label">XP</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======= Barra de navegación y progreso de lección ======= -->
+  <nav class="step-nav" id="step-nav">
+    <div class="step-nav-controls">
+      <button class="step-nav-btn" id="btn-prev" disabled title="Previous step (Left Arrow)">←</button>
+      <button class="step-nav-outline" id="btn-outline" title="Toggle Course Outline">
+        <span class="outline-icon-bars">☰</span> Course Outline
+      </button>
+      <button class="step-nav-btn" id="btn-next" title="Next step (Right Arrow)">→</button>
+    </div>
+
+    <!-- Barra de progreso segmentada -->
+    <div class="step-progress-wrapper">
+      <div class="step-progress-segments" id="progress-segments">
+        <!-- Generado dinámicamente -->
+      </div>
+      <span class="step-progress-text" id="progress-text">Step 1 of 5</span>
+    </div>
+  </nav>
+
+  <!-- ======= Contenedor principal de la aplicación ======= -->
+  <div class="app-layout" id="app-layout">
+
+    <!-- ======= Sidebar Izquierdo: Esquema del Curso ======= -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-inner">
+        <!-- Encabezado del sidebar -->
+        <div class="sidebar-header-row">
+          <span class="sidebar-course-title" id="sidebar-course-title">Course Curriculum</span>
+        </div>
+
+        <!-- Árbol de fases y lecciones con scroll vertical -->
+        <div class="sidebar-curriculum-tree" id="sidebar-curriculum-tree">
+          <!-- Generado dinámicamente por JavaScript -->
+        </div>
+
+        <!-- Footer del sidebar con medidor de progreso premium -->
+        <div class="sidebar-footer">
+          <div class="sidebar-progress-header">
+            <div class="sidebar-progress-title">
+              <span class="progress-dot"></span>
+              <span>Course Progress</span>
+            </div>
+            <span class="sidebar-progress-badge" id="sidebar-progress-pct">0%</span>
+          </div>
+          <div class="sidebar-meter-track">
+            <div class="sidebar-meter-fill" id="sidebar-meter-fill" style="width: 0%;"></div>
+          </div>
+          <div class="sidebar-progress-sub">
+            <span id="sidebar-lessons-count">0 of 20 Complete</span>
+            <span id="sidebar-xp-earned">0 XP</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ======= Área Principal de Contenido ======= -->
+    <main class="main-content" id="main-content">
+      <!-- Contenedor dinámico del paso activo -->
+      <div class="step-container" id="step-container">
+        <!-- Generado dinámicamente según el tipo de paso (animation, reading, lab, quiz, etc.) -->
+      </div>
+    </main>
+  </div>
+
+  <!-- ======= Modal de Guía Rápida de Fórmulas EE 101 ======= -->
+  <div class="modal-overlay" id="modal-cheatsheet">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-icon">📐</span>
+          <h2 class="modal-title">Master Formula Reference (EE 101)</h2>
+        </div>
+        <button class="modal-close-btn" id="btn-close-cheatsheet" title="Close">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="formula-grid">
+          <!-- Card 1: Ohm's Law -->
+          <div class="formula-card">
+            <div class="formula-card-header"><span class="formula-card-title">Ohm's Law</span></div>
+            <div class="formula-equation-box">$$V = I \cdot R$$</div>
+            <p class="formula-card-desc">Voltage equals current times resistance</p>
+            <div class="formula-card-unit">Units: Volts (V), Amperes (A), Ohms (Ω)</div>
+          </div>
+
+          <!-- Card 2: Current & Resistance -->
+          <div class="formula-card">
+            <div class="formula-card-header"><span class="formula-card-title">Current & Resistance</span></div>
+            <div class="formula-equation-box">$$I = \frac{V}{R} \quad\text{and}\quad R = \frac{V}{I}$$</div>
+            <p class="formula-card-desc">Current flow & opposition relations</p>
+            <div class="formula-card-unit">Units: Amperes (A) & Ohms (Ω)</div>
+          </div>
+
+          <!-- Card 3: Watt's Law (Power) -->
+          <div class="formula-card">
+            <div class="formula-card-header"><span class="formula-card-title">Electrical Power (Watt's Law)</span></div>
+            <div class="formula-equation-box">$$P = V \cdot I = I^2 R = \frac{V^2}{R}$$</div>
+            <p class="formula-card-desc">Rate of electrical energy conversion into work/heat</p>
+            <div class="formula-card-unit">Units: Watts (W) = Joules per second (J/s)</div>
+          </div>
+
+          <!-- Card 4: Kirchhoff's Laws -->
+          <div class="formula-card">
+            <div class="formula-card-header"><span class="formula-card-title">Kirchhoff's Laws (KCL & KVL)</span></div>
+            <div class="formula-equation-box">$$\sum I_{\text{in}} = \sum I_{\text{out}} \quad\text{and}\quad \sum V_{\text{loop}} = 0$$</div>
+            <p class="formula-card-desc">Conservation of charge at nodes & energy around closed loops</p>
+            <div class="formula-card-unit">Foundation for Nodal & Mesh Analysis</div>
+          </div>
+
+          <!-- Card 5: Voltage Divider -->
+          <div class="formula-card">
+            <div class="formula-card-header"><span class="formula-card-title">Voltage Divider Rule</span></div>
+            <div class="formula-equation-box">$$V_{\text{out}} = V_{\text{in}} \cdot \left(\frac{R_2}{R_1 + R_2}\right)$$</div>
+            <p class="formula-card-desc">Fractional voltage drop across series resistors</p>
+            <div class="formula-card-unit">Valid for unloaded series resistor pairs</div>
+          </div>
+
+          <!-- Card 6: Equivalent Resistances -->
+          <div class="formula-card">
+            <div class="formula-card-header"><span class="formula-card-title">Equivalent Resistances</span></div>
+            <div class="formula-equation-box">$$R_{\text{series}} = \sum R_i \quad\text{and}\quad R_{\text{parallel}} = \frac{R_1 \cdot R_2}{R_1 + R_2}$$</div>
+            <p class="formula-card-desc">Series resistors add; parallel resistors combine reciprocally</p>
+            <div class="formula-card-unit">Units: Ohms (Ω)</div>
+          </div>
+
+          <!-- Card 7: Maximum Power Transfer -->
+          <div class="formula-card">
+            <div class="formula-card-header"><span class="formula-card-title">Maximum Power Transfer</span></div>
+            <div class="formula-equation-box">$$R_L = R_{\text{Th}} \implies P_{\text{max}} = \frac{V_{\text{Th}}^2}{4 R_{\text{Th}}}$$</div>
+            <p class="formula-card-desc">Matched load impedance maximizes power delivery (50% efficiency)</p>
+            <div class="formula-card-unit">Thevenin Source Matching</div>
+          </div>
+
+          <!-- Card 8: Capacitors & Inductors -->
+          <div class="formula-card">
+            <div class="formula-card-header"><span class="formula-card-title">Capacitors & Inductors</span></div>
+            <div class="formula-equation-box">$$i_C = C \frac{dv_C}{dt} \quad\text{and}\quad v_L = L \frac{di_L}{dt}$$</div>
+            <p class="formula-card-desc">Energy: \(w_C = \frac{1}{2} C V^2\) &nbsp;|&nbsp; \(w_L = \frac{1}{2} L I^2\)</p>
+            <div class="formula-card-unit">Capacitor = Open in DC &nbsp;|&nbsp; Inductor = Short in DC</div>
+          </div>
+
+          <!-- Card 9: First-Order Time Constants -->
+          <div class="formula-card">
+            <div class="formula-card-header"><span class="formula-card-title">First-Order Time Constants (τ)</span></div>
+            <div class="formula-equation-box">$$\tau = R \cdot C \quad\text{and}\quad v(t) = V_s \left(1 - e^{-t/\tau}\right)$$</div>
+            <p class="formula-card-desc">Step charging transient • Settles in 5τ (99.3% steady state)</p>
+            <div class="formula-card-unit">Units: Seconds (s)</div>
+          </div>
+
+          <!-- Card 10: AC Complex Impedance -->
+          <div class="formula-card">
+            <div class="formula-card-header"><span class="formula-card-title">AC Complex Impedance</span></div>
+            <div class="formula-equation-box">$$\mathbf{Z}_R = R, \quad \mathbf{Z}_L = j\omega L, \quad \mathbf{Z}_C = \frac{1}{j\omega C}$$</div>
+            <p class="formula-card-desc">Ohm's Law in frequency domain: \(\mathbf{V} = \mathbf{I} \cdot \mathbf{Z}\)</p>
+            <div class="formula-card-unit">Resonance: \(\omega_0 = \frac{1}{\sqrt{LC}}\) &nbsp;|&nbsp; \(f_c = \frac{1}{2\pi RC}\)</div>
+          </div>
+
+          <!-- Card 11: Op-Amp Golden Rules & Gain -->
+          <div class="formula-card">
+            <div class="formula-card-header"><span class="formula-card-title">Op-Amp Golden Rules & Gain</span></div>
+            <div class="formula-equation-box">$$A_{v\text{(inv)}} = -\frac{R_f}{R_1} \quad\text{and}\quad A_{v\text{(non-inv)}} = 1 + \frac{R_f}{R_1}$$</div>
+            <p class="formula-card-desc">Ideal Op-Amp parameters under negative feedback (\(i_+ = i_- = 0, v_+ = v_-\))</p>
+            <div class="formula-card-unit">Buffer: \(A_v = 1\) (Unity Gain Voltage Follower)</div>
+          </div>
+
+          <!-- Card 12: Real-World Decoupling (H&H) -->
+          <div class="formula-card">
+            <div class="formula-card-header"><span class="formula-card-title">Decoupling & Switching</span></div>
+            <div class="formula-equation-box">$$C_{\text{bypass}} \ge 0.1\,\mu\text{F} \quad\text{and}\quad I_c = \beta \cdot I_b$$</div>
+            <p class="formula-card-desc">Place within 3mm of IC Vcc pin & solid unbroken ground plane</p>
+            <div class="formula-card-unit">Horowitz & Hill Hardware Rule #1</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Botón Flotante del Asistente Académico ======= -->
+  <button class="btn-floating-tutor" id="btn-open-tutor" title="Ask EE 101 Tutor (Strictly Grounded in Textbooks)">
+    <span class="tutor-btn-icon">
+      <svg class="svg-icon" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" fill="currentColor"/></svg>
+    </span>
+    <span class="tutor-btn-label">Ask Tutor</span>
+    <span class="tutor-ai-badge">AI</span>
+  </button>
+
+  <!-- ======= Drawer Lateral del Asistente ======= -->
+  <div class="tutor-overlay" id="tutor-overlay"></div>
+  <aside class="tutor-drawer" id="tutor-drawer">
+    <div class="tutor-drawer-header">
+      <div class="tutor-drawer-title-wrap">
+        <div class="tutor-avatar">⚡</div>
+        <div>
+          <h3 class="tutor-drawer-title">ContraVista Assistant</h3>
+          <span class="tutor-drawer-subtitle">Grounded in Alexander & Sadiku + Horowitz & Hill</span>
+        </div>
+      </div>
+      <button class="btn-close-tutor" id="btn-close-tutor" title="Close Drawer">✕</button>
+    </div>
+
+    <!-- Mode Selector: Local Index ($0 Tokens) vs Live Gemini AI -->
+    <div class="tutor-mode-bar">
+      <button class="tutor-mode-btn active" id="btn-mode-auto" data-mode="auto" title="Prioritize $0 Local Textbook Index, use Live AI only when needed">
+        <span class="mode-icon">⚡</span> Auto ($0 Saver)
+      </button>
+      <button class="tutor-mode-btn" id="btn-mode-local" data-mode="local" title="100% Offline, $0 tokens guaranteed">
+        <span class="mode-icon">📖</span> 100% Local Index
+      </button>
+      <button class="tutor-mode-btn" id="btn-mode-live" data-mode="live" title="Always use Live Gemini AI">
+        <span class="mode-icon">🤖</span> Live AI
+      </button>
+    </div>
+
+    <!-- Suggested questions bar -->
+    <div class="tutor-suggested-wrap">
+      <span class="suggested-label">Suggested for this topic:</span>
+      <div class="suggested-pills" id="tutor-suggested-pills">
+        <button class="suggested-pill" data-q="What is Ohm's Law and how do I calculate voltage, current, and resistance?">Ohm's Law formula</button>
+        <button class="suggested-pill" data-q="How do I calculate power dissipation in a resistor?">Power dissipation (P = I²R)</button>
+        <button class="suggested-pill" data-q="Why is a 0.1µF ceramic decoupling capacitor required at every IC pin?">Decoupling capacitor rule</button>
+      </div>
+    </div>
+
+    <!-- Chat message thread -->
+    <div class="tutor-messages-thread" id="tutor-messages-thread">
+      <div class="tutor-message msg-assistant">
+        <div class="msg-avatar">⚡</div>
+        <div class="msg-bubble">
+          <p>Hello! I am your <strong>EE 101 Academic Assistant</strong>.</p>
+          <p>I answer questions strictly based on the derivations, theorems, and design rules from <em>Alexander & Sadiku</em>, <em>Horowitz & Hill</em>, and <em>Morris Mano</em>.</p>
+          <p>Ask me anything about circuit analysis, formulas, or real-world hardware craft!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Input bar -->
+    <div class="tutor-input-bar">
+      <div class="tutor-input-wrap">
+        <input type="text" id="tutor-input-field" class="tutor-input-field" placeholder="Ask about formulas, theorems, or derivations..." />
+        <button id="btn-send-tutor" class="btn-send-tutor" title="Send Question">
+          <svg class="svg-icon" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+      </div>
+      <div class="tutor-footer-meta">
+        <span>⚡ Instant Offline Index + Gemini 2.0 Flash</span>
+        <span>Zero token waste mode</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ======= Toast flotante de XP (+50 XP) ======= -->
+  <div class="xp-toast" id="xp-toast"></div>
+
+  <!-- ======= Barra inferior de atajos de teclado sutil ======= -->
+  <footer class="keyboard-hints-bar" id="keyboard-hints-bar">
+    <div class="hint-item"><kbd>←</kbd> <kbd>→</kbd> Navigate</div>
+    <div class="hint-item"><kbd>1</kbd>–<kbd>4</kbd> Select Answer</div>
+    <div class="hint-item"><kbd>Enter</kbd> Submit / Continue / Flip</div>
+    <div class="hint-item"><kbd>Space</kbd> Flip Card</div>
+  </footer>
+
+  <!-- KaTeX Math Engine (Local, Offline & Fast) -->
+  <script src="vendor/katex/katex.min.js"></script>
+  <script src="vendor/katex/auto-render.min.js"></script>
+
+  <script src="curriculum.js"></script>
+  <script src="tutor_knowledge_base.js"></script>
+  <script src="tutor_engine.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

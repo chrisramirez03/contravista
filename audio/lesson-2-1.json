@@ -1,0 +1,42 @@
+{
+  "lessonId": "lesson-2-1",
+  "voice": "en-US-ChristopherNeural",
+  "totalDuration": 62.94,
+  "sentences": [
+    {
+      "text": "A capacitor consists of two conducting plates separated by an insulating dielectric material.",
+      "start": 0.1,
+      "end": 6.27
+    },
+    {
+      "text": "When voltage is applied, positive charge accumulates on one plate and negative charge on the other, creating an electric field.",
+      "start": 6.22,
+      "end": 14.11
+    },
+    {
+      "text": "The fundamental relationship between current and voltage is: i = C × (dv / dt).",
+      "start": 14.11,
+      "end": 21.33
+    },
+    {
+      "text": "Current only flows through a capacitor when the voltage is changing.",
+      "start": 21.32,
+      "end": 25.48
+    },
+    {
+      "text": "In a steady-state DC circuit where voltage is constant (dv/dt = 0), a capacitor acts as an open circuit (i = 0).",
+      "start": 25.48,
+      "end": 35.3
+    },
+    {
+      "text": "strong>Energy Stored in a Capacitor:</strong> $w = \\\\frac{1}{2} C V^2$ Joules.",
+      "start": 35.3,
+      "end": 46.84
+    },
+    {
+      "text": "Notice that the voltage across a capacitor cannot change instantaneously, because that would require infinite current ($i = C \\\\frac{dv}{0} = \\\\infty$).",
+      "start": 46.84,
+      "end": 62.94
+    }
+  ]
+}

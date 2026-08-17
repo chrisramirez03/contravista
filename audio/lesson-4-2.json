@@ -1,0 +1,47 @@
+{
+  "lessonId": "lesson-4-2",
+  "voice": "en-US-ChristopherNeural",
+  "totalDuration": 51.94,
+  "sentences": [
+    {
+      "text": "The two most common linear amplifier topologies are the Inverting and Non-Inverting amplifiers.",
+      "start": 0.1,
+      "end": 6.27
+    },
+    {
+      "text": "In an Inverting Amplifier, the input signal connects through R1 to the inverting input, with feedback resistor Rf.",
+      "start": 6.22,
+      "end": 13.84
+    },
+    {
+      "text": "The closed-loop voltage gain is: A_v = - (R_f / R_1).",
+      "start": 13.84,
+      "end": 20.8
+    },
+    {
+      "text": "The negative sign indicates a 180 degree phase inversion.",
+      "start": 20.8,
+      "end": 25.39
+    },
+    {
+      "text": "In a Non-Inverting Amplifier, the input connects directly to the non-inverting input.",
+      "start": 25.39,
+      "end": 31.05
+    },
+    {
+      "text": "The voltage gain is: A_v = 1 + (R_f / R_1), which is always positive and greater than or equal to one.",
+      "start": 31.05,
+      "end": 41.06
+    },
+    {
+      "text": "If Rf is zero and R1 is omitted, the gain is exactly 1.",
+      "start": 41.06,
+      "end": 46.01
+    },
+    {
+      "text": "This is a Voltage Follower buffer with infinite input impedance and zero output impedance.",
+      "start": 46.01,
+      "end": 51.94
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "lessonId": "lesson-1-5",
+  "voice": "en-US-ChristopherNeural",
+  "totalDuration": 37.38,
+  "sentences": [
+    {
+      "text": "Nodal analysis provides a general procedure for analyzing a circuit using node voltages as the circuit variables.",
+      "start": 0.1,
+      "end": 7.5
+    },
+    {
+      "text": "First, select a reference node (Ground, 0V).",
+      "start": 7.45,
+      "end": 12.2
+    },
+    {
+      "text": "Second, label the non-reference node voltages as v1, v2, up to vn-1.",
+      "start": 12.2,
+      "end": 19.29
+    },
+    {
+      "text": "Third, apply Kirchhoff's Current Law to each non-reference node, expressing branch currents using Ohm's Law: i = (v_high - v_low) / R. Fourth, solve the resulting system of simultaneous linear equations to determine all unknown node voltages.",
+      "start": 19.29,
+      "end": 37.38
+    }
+  ]
+}

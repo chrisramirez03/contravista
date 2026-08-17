@@ -1,0 +1,27 @@
+{
+  "lessonId": "lesson-1-7",
+  "voice": "en-US-ChristopherNeural",
+  "totalDuration": 29.2,
+  "sentences": [
+    {
+      "text": "In any linear circuit containing multiple independent sources, the voltage or current through any element is the algebraic sum of the responses caused by each source acting alone.",
+      "start": 0.1,
+      "end": 10.64
+    },
+    {
+      "text": "To turn off a voltage source, replace it with a short circuit (0 Volts, a solid wire).",
+      "start": 10.59,
+      "end": 17.14
+    },
+    {
+      "text": "To turn off a current source, replace it with an open circuit (0 Amperes, a broken wire).",
+      "start": 17.14,
+      "end": 23.59
+    },
+    {
+      "text": "Calculate the output for each source individually, then add the partial results together.",
+      "start": 23.59,
+      "end": 29.2
+    }
+  ]
+}

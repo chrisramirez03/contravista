@@ -1,0 +1,32 @@
+{
+  "lessonId": "lesson-4-5",
+  "voice": "en-US-ChristopherNeural",
+  "totalDuration": 32.54,
+  "sentences": [
+    {
+      "text": "A semiconductor diode is formed by joining P-type and N-type silicon.",
+      "start": 0.1,
+      "end": 5.1
+    },
+    {
+      "text": "It acts as a one-way valve for electric current.",
+      "start": 5.05,
+      "end": 8.56
+    },
+    {
+      "text": "When forward-biased (anode more positive than cathode), standard silicon diodes conduct with a constant forward voltage drop of approximately 0.7 Volts.",
+      "start": 8.56,
+      "end": 18.95
+    },
+    {
+      "text": "When reverse-biased, the diode blocks current completely up to its breakdown voltage.",
+      "start": 18.95,
+      "end": 24.66
+    },
+    {
+      "text": "Four diodes configured in a Full-Wave Bridge Rectifier convert alternating AC current into pulsating direct DC current.",
+      "start": 24.66,
+      "end": 32.54
+    }
+  ]
+}

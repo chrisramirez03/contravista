@@ -1,0 +1,32 @@
+{
+  "lessonId": "lesson-3-3",
+  "voice": "en-US-ChristopherNeural",
+  "totalDuration": 38.86,
+  "sentences": [
+    {
+      "text": "A frequency filter is a circuit designed to pass signals with desired frequencies while attenuating unwanted frequencies.",
+      "start": 0.1,
+      "end": 7.56
+    },
+    {
+      "text": "A Low-Pass Filter passes low frequencies from DC up to a cutoff frequency fc, and blocks high frequencies.",
+      "start": 7.51,
+      "end": 15.32
+    },
+    {
+      "text": "A High-Pass Filter blocks DC and low frequencies while passing high frequencies.",
+      "start": 15.32,
+      "end": 21.1
+    },
+    {
+      "text": "The cutoff frequency fc (the -3dB point) for a simple RC filter is: fc = 1 / (2 pi R C).",
+      "start": 21.1,
+      "end": 31.16
+    },
+    {
+      "text": "At the cutoff frequency, the output power drops to exactly 50% of the input power (a 3 decibel drop).",
+      "start": 31.16,
+      "end": 38.86
+    }
+  ]
+}

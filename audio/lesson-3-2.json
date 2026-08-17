@@ -1,0 +1,32 @@
+{
+  "lessonId": "lesson-3-2",
+  "voice": "en-US-ChristopherNeural",
+  "totalDuration": 44.43,
+  "sentences": [
+    {
+      "text": "In AC circuits with inductors and capacitors, voltage and current are out of phase.",
+      "start": 0.1,
+      "end": 5.97
+    },
+    {
+      "text": "Real Power P, measured in Watts, is the actual power converted into useful work and heat: P = V_rms × I_rms × cos(theta).",
+      "start": 5.92,
+      "end": 17.23
+    },
+    {
+      "text": "Reactive Power Q, measured in VAR, is the power bouncing between the source and reactive fields: Q = V_rms × I_rms × sin(theta).",
+      "start": 17.23,
+      "end": 29.31
+    },
+    {
+      "text": "Apparent Power S, measured in Volt-Amps (VA), is the vector combination: S = sqrt(P² + Q²).",
+      "start": 29.31,
+      "end": 39.64
+    },
+    {
+      "text": "The Power Factor is cos(theta) = P / S.",
+      "start": 39.64,
+      "end": 44.43
+    }
+  ]
+}

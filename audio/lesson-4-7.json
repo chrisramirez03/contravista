@@ -1,0 +1,52 @@
+{
+  "lessonId": "lesson-4-7",
+  "voice": "en-US-ChristopherNeural",
+  "totalDuration": 68.83,
+  "sentences": [
+    {
+      "text": "In textbooks, wires have zero resistance, capacitors have zero inductance, and ground is an equipotential plane.",
+      "start": 0.1,
+      "end": 8.22
+    },
+    {
+      "text": "In real hardware, every trace has parasitic resistance and inductance, and digital switching generates fast current spikes.",
+      "start": 8.18,
+      "end": 16.26
+    },
+    {
+      "text": "Rule One: Always place a 0.1 microfarad ceramic bypass capacitor as close as physically possible to the power pin of every IC chip.",
+      "start": 16.26,
+      "end": 25.67
+    },
+    {
+      "text": "This supplies local high-frequency current pulses without voltage droop across long PCB traces.",
+      "start": 25.68,
+      "end": 32.24
+    },
+    {
+      "text": "Rule Two: Use a continuous, unbroken Ground Plane on 2-layer and 4-layer PCBs to minimize ground loop area and EMI noise.",
+      "start": 32.24,
+      "end": 41.8
+    },
+    {
+      "text": "Rule Three: Never leave high-impedance CMOS inputs floating.",
+      "start": 41.8,
+      "end": 46.49
+    },
+    {
+      "text": "Always pull them up or down with a 10k resistor.",
+      "start": 46.49,
+      "end": 50.22
+    },
+    {
+      "text": "strong>Horowitz & Hill Pro-Tip:</strong> The #1 reason microcontroller and op-amp boards glitch, reset intermittently, or oscillate is missing decoupling capacitors.",
+      "start": 50.23,
+      "end": 61.29
+    },
+    {
+      "text": "Place a 100nF (0.1µF) X7R ceramic cap at every single power pin!",
+      "start": 61.29,
+      "end": 68.83
+    }
+  ]
+}
